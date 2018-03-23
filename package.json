@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "cuttlebelle watch"
+  },
+  "dependencies": {
+    "cuttlebelle": "^1.0.0-alpha.56"
+  }
+}

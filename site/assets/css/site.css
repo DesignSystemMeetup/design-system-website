@@ -1,0 +1,88 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.1;
+	font-family: "Droid Sans", sans-serif;
+	color: #313131;
+}
+
+header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2rem;
+	border-bottom: 8px solid #32ccbc;
+}
+
+main {
+	padding: 1rem;
+	display: grid;
+	min-height: 100%;
+	grid-template-columns: 2fr minmax(400px, 760px) 3fr;
+	grid-column-gap: 4em;
+}
+
+footer {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	padding: 1rem;
+	border-top: 2px solid #f55555;
+}
+
+@media (max-width: 25em) {
+	main {
+		grid-template-columns: auto;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	color: #444;
+}
+
+h1 {
+	font-size: 54px;
+}
+
+.dss-page__h2 {
+	font-size: 3em;
+	margin-top: 0;
+}
+
+.dss-event {
+	margin: 2em 0 5em;
+}
+
+.dss-event__heading {
+	text-transform: uppercase;
+}
+
+.dss-event__button {
+	background: #444;
+	color: #fff;
+	padding: 13px 26px;
+	text-transform: uppercase;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.dss-event__button:hover {
+	opacity: .8;
+}
+
+.dss-event__meta {
+	padding: 0.3em 1em;
+	border-left: 4px solid #ccc;
+	margin-bottom: 1em;
+}
+
+.dss-event__meta p {
+	margin: 0.5em 0;
+}
