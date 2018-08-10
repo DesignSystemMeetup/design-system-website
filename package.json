@@ -1,8 +1,15 @@
 {
-  "scripts": {
-    "start": "cuttlebelle watch"
-  },
-  "dependencies": {
-    "cuttlebelle": "^1.0.0-alpha.56"
-  }
+	"scripts": {
+		"start": "cuttlebelle watch"
+	},
+	"dependencies": {
+		"cuttlebelle": "^1.0.0-alpha.56"
+	},
+	"cuttlebelle": {
+		"folder": {
+			"code": "code/layout",
+			"assets": "code/assets",
+			"site": "docs"
+		}
+	}
 }
