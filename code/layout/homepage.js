@@ -1,22 +1,28 @@
+import { GetFutureEvents, GetPastEvents } from './helper.js';
 import PropTypes from 'prop-types';
+import Event from './event.js';
 import Nav from './nav.js';
 import React from 'react';
 
-const Page = ({
+const Homepage = ({
 	pagetitle,
 	stylesheet,
 	header,
 	main,
 	footer,
-	data,
 	events,
 	script,
 	_relativeURL,
 	_ID,
 	_nav,
 	_pages,
-	_store
+	_store,
+	_parseMD
 }) => {
+
+	const futureEvents = GetFutureEvents( _pages );
+	const pastEvents = GetPastEvents( _pages );
+
 	return (
 		<html>
 			<head>
@@ -32,16 +38,32 @@ const Page = ({
 						: null
 				}
 			</head>
-			<body className="eventpage">
+			<body className="homepage">
 				<div className="wrapper">
 					<header role="banner">{ header }</header>
 
 					<main>
-						<Nav _ID={ _ID } _pages={ _pages } _relativeURL={ _relativeURL } />
+						<strong>Upcoming meetup</strong>
+						<ul>
+							{
+								futureEvents.map( ( event, i ) => (
+									<li key={ i }>
+										<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
+									</li>
+								))
+							}
+						</ul>
 
-						<section>
-							{ data }
-						</section>
+						<strong>Past meetups</strong>
+						<ul>
+							{
+								pastEvents.map( ( event, i ) => (
+									<li key={ i }>
+										<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
+									</li>
+								))
+							}
+						</ul>
 					</main>
 				</div>
 
@@ -57,7 +79,7 @@ const Page = ({
 	);
 };
 
-Page.propTypes = {
+Homepage.propTypes = {
 	/**
 	 * header: (partials)(2)
 	 */
@@ -66,7 +88,7 @@ Page.propTypes = {
 	/**
 	 * pagetitle: Homepage
 	 */
-	pagetitle: PropTypes.string,
+	pagetitle: PropTypes.string.isRequired,
 
 	/**
 	 * footer: (partials)(2)
@@ -74,4 +96,4 @@ Page.propTypes = {
 	footer: PropTypes.node.isRequired,
 };
 
-export default Page;
+export default Homepage;

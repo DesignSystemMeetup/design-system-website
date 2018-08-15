@@ -1,11 +1,8 @@
-title: Events
+layout: homepage
+pagetitle: Design system meetup - Homepage
 
 header:
   - /_shared/header.md
-
-events:
-  - /_events/2018-04-15-atlassian.md
-  - /_events/2018-02-28-dta.md
 
 footer:
   - /_shared/footer.md

@@ -1,5 +1,15 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import Moment from 'moment';
+import React from 'react';
+
+
+const MakeDateTime = ( date, time ) => {
+	const [ hour, minute ] = time.split(':');
+
+	return Moment( date )
+		.hour( parseInt( hour ) + 12 )
+		.minute( minute );
+};
 
 /**
  * The content component
@@ -7,51 +17,59 @@ import PropTypes from 'prop-types';
 const Event = ({
 	_ID,
 	_body,
-	_self,
+	_parseMD,
+	title,
+	description,
 	date,
-	host,
-	address,
-	meetup,
-	_store,
-	_storeSet
-}) => {
-	const store = _store();
-	_storeSet({ [_self]: { host, date, address } });
-	return (
-		<article id={_self} className="dss-event">
-			<h3 className="dss-event__heading">{date} - {host}</h3>
-			<article className="dss-event__meta">
-				<p>
-					Location:{' '}
-					<a
-						title={`Directions to ${address}`}
-						href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(address)}+au`}
-					>
-						{address} [map]
-					</a>
-				</p>
-			</article>
-			{meetup && (
-				<article>
-					<a className="dss-event__button" href={meetup}>
-						Register
-					</a>
-				</article>
-			)}
+	location,
+	sponsors,
+	link,
+	speakers
+}) => (
+	<article className="dss-event" itemScope itemType="http://schema.org/Event">
+		<h1 className="dss-event__heading" itemProp="name">{ title }</h1>
 
-			<section>
-				<h4>Details</h4>
-				{_body}
-			</section>
-		</article>
-	);
-};
+		<span itemProp="startDate" content={ MakeDateTime( date, speakers[ 0 ].time ).toString() }>
+			{ MakeDateTime( date, speakers[ 0 ].time ).format('MM-DD-YYYY') }
+		</span>
+
+		{ location }
+
+		<div itemProp="description">
+			{ _parseMD( description ) }
+		</div>
+
+		<ul>
+			{
+				speakers.map( ( speaker, i ) => (
+					<li>
+						{ speaker.time } - { speaker.name ? speaker.name : speaker.title }<br/>
+						{ speaker.title && <strong>{ speaker.title }</strong> }
+						{ speaker.description && _parseMD( speaker.description ) }
+						{
+							speaker.video &&
+								<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.video }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen><a href={ speaker.video }>Watch video</a></iframe> }
+					</li>
+				))
+			}
+		</ul>
+
+		<div itemProp="offers" itemScope itemType="http://schema.org/Offer">
+			<span itemProp="price" content="Free" />
+			<span itemProp="priceCurrency" content="AUD" />
+			<a itemProp="url" href={ link }>RSVP</a>
+		</div>
+
+		<h2>Sponsors</h2>
+		{ sponsors }
+	</article>
+);
 
 Event.propTypes = {
 	/**
 	 * _body: (partials)(4)
 	 */
-	_body: PropTypes.node.isRequired
+	_body: PropTypes.node,
 };
 
 Event.defaultProps = {};

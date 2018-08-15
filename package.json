@@ -11,5 +11,8 @@
 			"assets": "code/assets",
 			"site": "docs"
 		}
+	},
+	"devDependencies": {
+		"moment": "^2.22.2"
 	}
 }

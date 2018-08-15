@@ -18,19 +18,26 @@ header {
 	border-bottom: 8px solid #32ccbc;
 }
 
-main {
+.eventpage main {
 	padding: 1rem;
 	display: grid;
 	min-height: 100%;
-	grid-template-columns: 2fr minmax(400px, 760px) 3fr;
+	grid-template-columns: minmax(200px, 400px) minmax(600px, 1fr);
 	grid-column-gap: 4em;
 }
 
-footer {
+.homepage main {
+	padding: 2rem 4rem;
+}
+
+.eventpage footer {
 	grid-row-start: 2;
 	grid-row-end: 3;
-	padding: 1rem;
+}
+
+footer {
 	border-top: 2px solid #f55555;
+	padding: 1rem;
 }
 
 @media (max-width: 25em) {
