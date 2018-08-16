@@ -43,8 +43,8 @@ const Event = ({
 			{
 				speakers.map( ( speaker, i ) => (
 					<li key={ i }>
-						{ speaker.time } - { speaker.name ? speaker.name : speaker.title }<br/>
-						{ speaker.title && <strong>{ speaker.title }</strong> }
+						{ speaker.time } - { speaker.name ? speaker.name : speaker.title }
+						{ speaker.title && <p><strong>{ speaker.title }</strong></p> }
 						{ speaker.description && _parseMD( speaker.description ) }
 						{
 							speaker.video &&

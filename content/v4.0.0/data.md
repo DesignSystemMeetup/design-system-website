@@ -18,7 +18,7 @@ speakers:
     title: Open doors
   - time: "6:15"
     name: Sarah Karp
-    title: TODO
+    title: What's in a name? How Design Systems lead to better terminology decisions
     description: |
       Have you ever wondered why you “favourite” one thing but “star” something else?
       What role do Design System teams play when naming a brand new feature or renaming a legacy concept?
@@ -32,7 +32,12 @@ speakers:
       TODO
   - time: "7:15"
     name: Ben Buchanan
-    title: TODO
+    title: The Naming of Things
     description: |
-      TODO
+      Giving a name to something is a powerful action.
+      It's part of human nature to attach meaning and expectation to people, objects and ideas just from the name they have been given.
+      For design systems this impacts everything from coding standards to the efficiency of collaboration between teams.
+      How do you define components in a way all stakeholders can understand?
+      How do you set APIs that will last?
+      It all starts with naming things.
 ---
