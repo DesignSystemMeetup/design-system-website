@@ -1,6 +1,7 @@
 import { GetFutureEvents, GetPastEvents } from './helper.js';
 import PropTypes from 'prop-types';
 import Event from './event.js';
+import Meta from './meta.js';
 import Nav from './nav.js';
 import React from 'react';
 
@@ -27,9 +28,7 @@ const Homepage = ({
 		<html>
 			<head>
 				<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
-				<meta charSet="utf-8" />
-				<meta httpEquiv="x-ua-compatible" content="ie=edge" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<Meta/>
 				<link rel="stylesheet" href={_relativeURL(`/assets/css/site.css`, _ID)} />
 
 				{
