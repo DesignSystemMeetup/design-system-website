@@ -57,7 +57,7 @@ const Event = ({
 		<div itemProp="offers" itemScope itemType="http://schema.org/Offer">
 			<span itemProp="price" content="Free" />
 			<span itemProp="priceCurrency" content="AUD" />
-			<a itemProp="url" href={ link }>RSVP</a>
+			<a itemProp="url" href={ link }>{ Date.parse( date ) < new Date() ? 'See past meetup event' : 'RSVP' }</a>
 		</div>
 
 		<h2>Sponsors</h2>
