@@ -17,9 +17,7 @@ const Partial = ({
 		<span itemProp="name">{ name }</span>
 		<div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
 			<span itemProp="streetAddress">{ address.street }</span><br/>
-			<span itemProp="addressLocality">{ address.city }</span>,
-			<span itemProp="addressRegion">{ address.state }</span>
-			<span itemProp="postalCode">{ address.zip }</span>
+			<span itemProp="addressLocality">{ address.city }</span>, <span itemProp="addressRegion">{ address.state }</span> <span itemProp="postalCode">{ address.zip }</span>
 		</div>
 	</div>
 );
