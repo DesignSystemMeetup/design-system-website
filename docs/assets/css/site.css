@@ -7,15 +7,31 @@ body {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	line-height: 1.1;
-	font-family: "Droid Sans", sans-serif;
-	color: #313131;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	color: #D9E5FF;
+	background: #0A0F2B;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a:visited {
+	color: #ffc000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
 }
 
 header {
 	text-align: center;
-	font-weight: bold;
-	font-size: 2rem;
-	border-bottom: 8px solid #32ccbc;
+	border-bottom: 8px solid #E02828;
 }
 
 .eventpage main {
@@ -36,7 +52,7 @@ header {
 }
 
 footer {
-	border-top: 2px solid #f55555;
+	border-top: 2px solid #E02828;
 	padding: 1rem;
 }
 
@@ -44,52 +60,4 @@ footer {
 	main {
 		grid-template-columns: auto;
 	}
-}
-
-h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
-	color: #444;
-}
-
-h1 {
-	font-size: 54px;
-}
-
-.dss-page__h2 {
-	font-size: 3em;
-	margin-top: 0;
-}
-
-.dss-event {
-	margin: 2em 0 5em;
-}
-
-.dss-event__heading {
-	text-transform: uppercase;
-}
-
-.dss-event__button {
-	background: #444;
-	color: #fff;
-	padding: 13px 26px;
-	text-transform: uppercase;
-	border: none;
-	text-decoration: none;
-	cursor: pointer;
-	font-size: 12px;
-	display: inline-block;
-}
-
-.dss-event__button:hover {
-	opacity: .8;
-}
-
-.dss-event__meta {
-	padding: 0.3em 1em;
-	border-left: 4px solid #ccc;
-	margin-bottom: 1em;
-}
-
-.dss-event__meta p {
-	margin: 0.5em 0;
 }

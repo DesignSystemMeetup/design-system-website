@@ -30,7 +30,7 @@ const Event = ({
 		<h1 className="dss-event__heading" itemProp="name">{ title }</h1>
 
 		<span itemProp="startDate" content={ MakeDateTime( date, speakers[ 0 ].time ).toString() }>
-			{ MakeDateTime( date, speakers[ 0 ].time ).format('MM-DD-YYYY') }
+			{ MakeDateTime( date, speakers[ 0 ].time ).format('Do MMMM YYYY') }
 		</span>
 
 		{ location }
@@ -42,7 +42,7 @@ const Event = ({
 		<ul>
 			{
 				speakers.map( ( speaker, i ) => (
-					<li>
+					<li key={ i }>
 						{ speaker.time } - { speaker.name ? speaker.name : speaker.title }<br/>
 						{ speaker.title && <strong>{ speaker.title }</strong> }
 						{ speaker.description && _parseMD( speaker.description ) }
