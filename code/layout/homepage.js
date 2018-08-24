@@ -85,7 +85,7 @@ const Homepage = ({
 					</main>
 				</div>
 
-				<footer className="wrapper">{ footer }</footer>
+				{ footer }
 
 				<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 			</body>

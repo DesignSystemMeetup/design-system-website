@@ -328,3 +328,16 @@ a.sponsor {
 	width: 100%;
 	height: 100%;
 }
+
+footer.wrapper {
+	display: block;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	font-size: 14px;
+	text-align: center;
+	color: #647EA3;
+}
+
+footer.wrapper a {
+	color: #647EA3;
+}
