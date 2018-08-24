@@ -40,7 +40,7 @@ const EventDetails = ({
 									{ speaker.time }
 								</span> &mdash; {
 									speaker.name
-										? <span itemScope itemProp="author" itemtype="http://schema.org/Person">
+										? <span itemScope itemProp="author" itemType="http://schema.org/Person">
 												<span itemProp="name">{ speaker.name }</span>
 											</span>
 										: <Fragment> { speaker.title }</Fragment>
