@@ -1,6 +1,0 @@
-header: /_shared/header.md
-
-data:
-	- data.md
-
-footer: /_shared/footer.md

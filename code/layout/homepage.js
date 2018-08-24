@@ -1,7 +1,9 @@
-import { GetFutureEvents, GetPastEvents } from './helper.js';
+import { GetPastEvents, MakeDateTime } from './helper.js';
+import EventDetails from './eventDetails.js';
 import PropTypes from 'prop-types';
+import Scripts from './scripts.js';
 import Event from './event.js';
-import Meta from './meta.js';
+import Head from './head.js';
 import Nav from './nav.js';
 import React from 'react';
 
@@ -10,6 +12,7 @@ const Homepage = ({
 	stylesheet,
 	header,
 	main,
+	next,
 	footer,
 	events,
 	script,
@@ -21,44 +24,60 @@ const Homepage = ({
 	_parseMD
 }) => {
 
-	const futureEvents = GetFutureEvents( _pages );
 	const pastEvents = GetPastEvents( _pages );
 
 	return (
 		<html>
-			<head>
-				<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
-				<Meta/>
-				<link rel="stylesheet" href={_relativeURL(`/assets/css/site.css`, _ID)} />
+			<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
-				{
-					stylesheet != undefined
-						? <link rel="stylesheet" href={ _relativeURL(`/assets/css/${stylesheet}.css`, _ID) } />
-						: null
-				}
-			</head>
 			<body className="homepage">
 				<div className="wrapper">
-					<header role="banner">{ header }</header>
+					{ header }
 
-					<main>
-						<strong>Upcoming meetup</strong>
-						<ul>
-							{
-								futureEvents.map( ( event, i ) => (
-									<li key={ i }>
-										<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
-									</li>
-								))
-							}
-						</ul>
+					<main itemScope itemType="http://schema.org/Event">
+						<div className="innerWrapper eventsHeadline">
+							<div className="innerWrapper-left">
+								<h1>
+									<span itemProp="name">
+										<span className="sr-only">Design System Meetup - </span>
+										<span className="heading-small heading--shade-side eventsHeadline-fontstack">
+											{ next.version }<br/>
+											{ next.city }
+										</span>
+									</span>
+									<span className="eventsHeadline-title" itemProp="startDate" content={ MakeDateTime( next.date, next.speakers[ 0 ].time ).format() }>
+										{ MakeDateTime( next.date, next.speakers[ 0 ].time ).format('Do MMM YYYY') }
+									</span>
+								</h1>
+							</div>
+							<div className="innerWrapper-right" itemProp="offers" itemScope itemType="http://schema.org/Offer">
+								<span itemProp="price" content="Free" />
+								<span itemProp="priceCurrency" content="AUD" />
+								<a className="btn" itemProp="url" href={ next.link }>RSVP</a>
+							</div>
+						</div>
+
+						<EventDetails
+							_parseMD={ _parseMD }
+							_relativeURL={ _relativeURL }
+							_ID={ _ID }
+							pagetitle={ next.pagetitle }
+							version={ next.version }
+							city={ next.city }
+							description={ next.description }
+							date={ next.date }
+							location={ next.location }
+							sponsors={ next.sponsors }
+							link={ next.link }
+							speakers={ next.speakers }
+						/>
 
 						<strong>Past meetups</strong>
 						<ul>
 							{
 								pastEvents.map( ( event, i ) => (
 									<li key={ i }>
-										<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
+										<a href={ _relativeURL( event._url, _ID ) }>{ event.pagetitle }</a>
 									</li>
 								))
 							}
@@ -66,13 +85,9 @@ const Homepage = ({
 					</main>
 				</div>
 
-				<footer>{ footer }</footer>
+				<footer className="wrapper">{ footer }</footer>
 
-				{
-					script != undefined
-						? <script type="text/javascript" src={ _relativeURL( `/assets/js/${script}.js`, _ID ) }/>
-						: null
-				}
+				<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 			</body>
 		</html>
 	);

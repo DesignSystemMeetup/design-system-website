@@ -15,7 +15,7 @@ const Nav = ({ _ID, _pages, _relativeURL }) => {
 					{
 						futureEvents.map( ( event, i ) => (
 							<li key={ i }>
-								<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
+								<a href={ _relativeURL( event._url, _ID ) }>{ event.pagetitle }</a>
 							</li>
 						))
 					}
@@ -26,7 +26,7 @@ const Nav = ({ _ID, _pages, _relativeURL }) => {
 					{
 						pastEvents.map( ( event, i ) => (
 							<li key={ i }>
-								<a href={ _relativeURL( event._url, _ID ) }>{ event.title }</a>
+								<a href={ _relativeURL( event._url, _ID ) }>{ event.pagetitle }</a>
 							</li>
 						))
 					}

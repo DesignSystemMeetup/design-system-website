@@ -1,6 +1,10 @@
 {
 	"scripts": {
-		"start": "cuttlebelle watch"
+		"build:css": "postcss code/css/site.css --output code/assets/css/site.min.css --use cssnano --use autoprefixer --autoprefixer.browsers \"last 4 version\" --no-map",
+		"build": "npm run build:css && cuttlebelle",
+		"watch:css": "onchange 'code/css/*.css' -- npm run build:css",
+		"watch:site": "cuttlebelle -w -n",
+		"watch": "npm run build && npm run watch:css | npm run watch:site"
 	},
 	"dependencies": {
 		"cuttlebelle": "^1.0.0-alpha.56"
@@ -13,6 +17,10 @@
 		}
 	},
 	"devDependencies": {
-		"moment": "^2.22.2"
+		"autoprefixer": "^9.1.2",
+		"cssnano": "^4.0.5",
+		"moment": "^2.22.2",
+		"onchange": "^4.1.0",
+		"postcss-cli": "^6.0.0"
 	}
 }

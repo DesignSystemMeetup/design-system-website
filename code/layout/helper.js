@@ -1,8 +1,11 @@
+import Moment from 'moment';
+
+
 const GetEvents = ( _pages ) => {
-	let EVENTS = [];
+	const EVENTS = [];
 	Object.entries( _pages )
-		.map( page => {
-			if( page[ 1 ].type === 'event' ) EVENTS.push( page[ 1 ] );
+		.map( ([ pageName, page ]) => {
+			if( page.type === 'event' ) EVENTS.push( page );
 		});
 
 	return EVENTS
@@ -17,4 +20,12 @@ export const GetPastEvents = ( _pages ) => {
 export const GetFutureEvents = ( _pages ) => {
 	return GetEvents( _pages )
 		.filter( event => Date.parse( event.date ) > new Date());
+};
+
+export const MakeDateTime = ( date, time ) => {
+	const [ hour, minute ] = time.split(':');
+
+	return Moment( date )
+		.hour( parseInt( hour ) + 12 )
+		.minute( minute );
 };

@@ -1,56 +1,38 @@
 import PropTypes from 'prop-types';
-import Meta from './meta.js';
+import Scripts from './scripts.js';
+import Head from './head.js';
 import Nav from './nav.js';
 import React from 'react';
 
 const Page = ({
+	_ID,
+	_relativeURL,
+	_pages,
 	pagetitle,
-	stylesheet,
 	header,
 	main,
-	footer,
-	data,
-	events,
-	script,
-	_relativeURL,
-	_ID,
-	_nav,
-	_pages,
-	_store
+	footer
 }) => {
 	return (
 		<html>
-			<head>
-				<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
-				<Meta/>
-				<link rel="stylesheet" href={_relativeURL(`/assets/css/site.css`, _ID)} />
+			<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
-				{
-					stylesheet != undefined
-						? <link rel="stylesheet" href={ _relativeURL(`/assets/css/${stylesheet}.css`, _ID) } />
-						: null
-				}
-			</head>
-			<body className="eventpage">
+			<body className="page">
 				<div className="wrapper">
-					<header role="banner">{ header }</header>
+					{ header }
 
 					<main>
 						<Nav _ID={ _ID } _pages={ _pages } _relativeURL={ _relativeURL } />
 
 						<section>
-							{ data }
+							{ main }
 						</section>
 					</main>
 				</div>
 
-				<footer>{ footer }</footer>
+				<footer className="wrapper">{ footer }</footer>
 
-				{
-					script != undefined
-						? <script type="text/javascript" src={ _relativeURL( `/assets/js/${script}.js`, _ID ) }/>
-						: null
-				}
+				<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 			</body>
 		</html>
 	);
@@ -66,6 +48,11 @@ Page.propTypes = {
 	 * pagetitle: Homepage
 	 */
 	pagetitle: PropTypes.string,
+
+	/**
+	 * main: (partials)(2)
+	 */
+	main: PropTypes.node.isRequired,
 
 	/**
 	 * footer: (partials)(2)

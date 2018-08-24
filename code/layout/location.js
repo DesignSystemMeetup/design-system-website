@@ -13,12 +13,13 @@ const Partial = ({
 	description,
 	map
 }) => (
-	<div itemProp="location" itemScope itemType="http://schema.org/Place">
-		<span itemProp="name">{ name }</span>
-		<div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+	<div className="location" itemProp="location" itemScope itemType="http://schema.org/Place">
+		<span className="location-name" itemProp="name">{ name }</span>
+		<div className="location-address" itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
 			<span itemProp="streetAddress">{ address.street }</span><br/>
 			<span itemProp="addressLocality">{ address.city }</span>, <span itemProp="addressRegion">{ address.state }</span> <span itemProp="postalCode">{ address.zip }</span>
 		</div>
+		<iframe className="location-map" src={ map } frameBorder="0" style={{ border:0 }} allowFullScreen></iframe>
 	</div>
 );
 

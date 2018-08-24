@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 
 
 /**
@@ -7,8 +7,10 @@ import React, { Fragment } from 'react';
  *
  * @disable-docs
  */
-const Meta = ({ _ID, _relativeURL }) => (
-	<Fragment>
+const Head = ({ _ID, _relativeURL, pagetitle }) => (
+	<head>
+		<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
+
 		<meta charSet="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta httpEquiv="x-ua-compatible" content="ie=edge"/>
@@ -37,11 +39,14 @@ const Meta = ({ _ID, _relativeURL }) => (
 		<meta property="og:image:height" content="1175"/>
 		<meta property="og:image:width" content="2244"/>
 		<meta property="og:url" content="https://designsystemmeetup.com/"/>
-	</Fragment>
+
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet"/>
+		<link rel="stylesheet" href={_relativeURL(`/assets/css/site.min.css`, _ID)}/>
+	</head>
 );
 
-Meta.propTypes = {};
+Head.propTypes = {};
 
-Meta.defaultProps = {};
+Head.defaultProps = {};
 
-export default Meta;
+export default Head;

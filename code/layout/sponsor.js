@@ -7,10 +7,10 @@ import React, { Fragment } from 'react';
  *
  * @disable-docs
  */
-const Partial = ({ name, link, description, _parseMD }) => (
-	<a href={ link }>
-		<strong>{ name }</strong>
-		{ _parseMD( description ) }
+const Partial = ({ name, link, description, logo, _parseMD, _relativeURL, _ID }) => (
+	<a className="sponsor" href={ link } rel="external">
+		<img className="sponsor-img" src={ _relativeURL( logo, _ID ) } alt={`${ name } logo`}/>
+		<div className="sponsor-desc">{ _parseMD( description ) }</div>
 	</a>
 );
 

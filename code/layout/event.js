@@ -1,76 +1,90 @@
+import EventDetails from './eventDetails.js';
+import { MakeDateTime } from './helper.js';
 import PropTypes from 'prop-types';
+import Scripts from './scripts.js';
+import Head from './head.js';
 import Moment from 'moment';
+import Nav from './nav.js';
 import React from 'react';
-
-
-const MakeDateTime = ( date, time ) => {
-	const [ hour, minute ] = time.split(':');
-
-	return Moment( date )
-		.hour( parseInt( hour ) + 12 )
-		.minute( minute );
-};
 
 /**
  * The content component
  */
 const Event = ({
 	_ID,
-	_body,
 	_parseMD,
-	title,
+	_pages,
+	_relativeURL,
+	pagetitle,
+	version,
+	city,
 	description,
 	date,
 	location,
 	sponsors,
 	link,
-	speakers
+	speakers,
+	header,
+	footer
 }) => (
-	<article className="dss-event" itemScope itemType="http://schema.org/Event">
-		<h1 className="dss-event__heading" itemProp="name">{ title }</h1>
+	<html>
+		<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
-		<span itemProp="startDate" content={ MakeDateTime( date, speakers[ 0 ].time ).toString() }>
-			{ MakeDateTime( date, speakers[ 0 ].time ).format('Do MMMM YYYY') }
-		</span>
+		<body className="eventpage">
+			<div className="wrapper">
+				{ header }
 
-		{ location }
+				<main>
+					<section itemScope itemType="http://schema.org/Event">
+						<div className="innerWrapper eventsHeadline">
+							<div className="innerWrapper-left eventsHeadline-main">
+								<a className="eventsHeadline-back" href={ _relativeURL( '/', _ID ) }>
+									<svg className="back" role="img" title="Go back to the homepage">
+										<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
+									</svg>
+								</a>
+								<h1>
+									<span itemProp="name">
+										<span className="sr-only">Design System Meetup - { version } { city }</span>
+									</span>
+									<span className="eventsHeadline-title" itemProp="startDate" content={ MakeDateTime( date, speakers[ 0 ].time ).format() }>
+										{ MakeDateTime( date, speakers[ 0 ].time ).format('Do MMM YYYY') }
+									</span>
+								</h1>
+							</div>
+							<div className="innerWrapper-right eventsHeadline-details">
+								<span className="heading-small heading--shade-side eventsHeadline-details-name">
+									{ version } &mdash; { city }
+								</span>
+							</div>
+						</div>
 
-		<div itemProp="description">
-			{ _parseMD( description ) }
-		</div>
+						<EventDetails
+							_parseMD={ _parseMD }
+							_relativeURL={ _relativeURL }
+							_ID={ _ID }
+							pagetitle={ pagetitle }
+							version={ version }
+							city={ city }
+							description={ description }
+							date={ date }
+							location={ location }
+							sponsors={ sponsors }
+							link={ link }
+							speakers={ speakers }
+						/>
+					</section>
+				</main>
+			</div>
 
-		<ul>
-			{
-				speakers.map( ( speaker, i ) => (
-					<li key={ i }>
-						{ speaker.time } - { speaker.name ? speaker.name : speaker.title }
-						{ speaker.title && <p><strong>{ speaker.title }</strong></p> }
-						{ speaker.description && _parseMD( speaker.description ) }
-						{
-							speaker.video &&
-								<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.video }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen><a href={ speaker.video }>Watch video</a></iframe> }
-					</li>
-				))
-			}
-		</ul>
+			<footer className="wrapper">{ footer }</footer>
 
-		<div itemProp="offers" itemScope itemType="http://schema.org/Offer">
-			<span itemProp="price" content="Free" />
-			<span itemProp="priceCurrency" content="AUD" />
-			<a itemProp="url" href={ link }>{ Date.parse( date ) < new Date() ? 'See past meetup event' : 'RSVP' }</a>
-		</div>
-
-		<h2>Sponsors</h2>
-		{ sponsors }
-	</article>
+			<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
+		</body>
+	</html>
 );
 
-Event.propTypes = {
-	/**
-	 * _body: (partials)(4)
-	 */
-	_body: PropTypes.node,
-};
+Event.propTypes = {};
 
 Event.defaultProps = {};
 
