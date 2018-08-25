@@ -95,6 +95,13 @@ a:hover {
 .eventsHeadline {
 	position: relative;
 	padding-left: 4.8rem;
+	margin-bottom: 3rem;
+}
+
+@media (min-width: 1000px) {
+	.eventsHeadline {
+		margin-bottom: 0;
+	}
 }
 
 .eventsHeadline-fontstack {
@@ -122,7 +129,8 @@ a:hover {
 }
 
 .eventsHeadline .innerWrapper-right {
-	margin-top: 2rem;
+	padding-top: 2rem;
+	margin-top: 0.6rem;
 }
 
 .heading-small.eventsHeadline-details-name {
@@ -132,7 +140,7 @@ a:hover {
 
 @media (min-width: 1000px) {
 	.eventsHeadline .innerWrapper-right {
-		margin-top: 0;
+		padding-top: 0;
 	}
 
 	.heading-small.eventsHeadline-details-name {
@@ -171,7 +179,8 @@ a:hover {
 	color: #8BC7FC;
 }
 
-.schedule {
+.schedule,
+.pastSchedule {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -264,24 +273,25 @@ a.btn {
 	display: block;
 	text-align: center;
 	box-shadow: 5px 5px 0px 0px #8F6259;
-	margin-bottom: 3rem;
+	margin-bottom: 3px;
+	margin-top: 0;
 }
 
-a.btn:focus {
-	outline: 3px dotted #FFC000;
-	outline-offset: 3px;
+a:focus.btn {
+	outline: none;
 }
 
-a:active.btn {
+a:active.btn,
+a:focus.btn {
 	margin-top: 3px;
 	box-shadow: 2px 2px 0px 0px #8F6259;
+	margin-bottom: -3px;
 }
 
 @media (min-width: 1000px) {
 	a.btn {
 		position: relative;
 		top: 1.3rem;
-		margin-bottom: 0;
 	}
 }
 
@@ -340,4 +350,86 @@ footer.wrapper {
 
 footer.wrapper a {
 	color: #647EA3;
+}
+
+.pastSchedule-headline {
+	position: relative;
+	border: 1px solid #FF9701;
+	padding: 1.5rem 1.5rem 1.5rem 4.8rem;
+	color: #FF9701;
+	margin-top: 3rem;
+	overflow: hidden;
+}
+
+.pastSchedule-headline:after,
+.pastSchedule-headline:before {
+	content: '';
+	position: absolute;
+	top: 2rem;
+	right: -1rem;
+	height:1px;
+	width: 6rem;
+	border-top: 1px solid #FF9701;
+	transform: rotate(-45deg);
+}
+
+.pastSchedule-headline:before {
+	transform: rotate(45deg);
+}
+
+@media (min-width: 1000px) {
+	.pastSchedule-headline {
+		margin-top: 0;
+	}
+}
+
+.pastSchedule {
+	margin-top: 3rem;
+}
+
+.pastSchedule .eventsHeadline-title {
+	margin-top: 0;
+	font-size: 1.5rem;
+}
+
+.pastSchedule-item + .pastSchedule-item + .pastSchedule-item {
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 1px solid #363C59;
+}
+
+.pastSchedule-item1 {
+	margin-left: 4.8rem;
+}
+
+.pastSchedule .heading--shade,
+.pastSchedule-speakerdesc {
+	margin-top: 0.5rem;
+}
+
+.pastSchedule-speakerdesc p {
+	margin: 0.5rem 0;
+}
+
+.pastSchedule-speakerdesc > p {
+	margin-top: 0;
+}
+
+.pastSchedule-speakerdesc {
+	margin-bottom: 2rem;
+}
+
+.pastSchedule-cta {
+	display: block;
+	margin-top: 2rem;
+	vertical-align: middle;
+}
+
+.pastSchedule-cta svg {
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	margin-left: 1rem;
+	margin-top: -0.1rem;
+	vertical-align: middle;
 }

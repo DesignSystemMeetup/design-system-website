@@ -17,7 +17,7 @@ const EventDetails = ({
 	pagetitle,
 	version,
 	city,
-	description,
+	eventdescription,
 	date,
 	location,
 	sponsors,
@@ -66,7 +66,7 @@ const EventDetails = ({
 		</div>
 
 		<div className="innerWrapper-right eventDetails-details details">
-			<div className="details-desc" itemProp="description">{ _parseMD( description ) }</div>
+			<div className="details-desc" itemProp="description">{ _parseMD( eventdescription ) }</div>
 
 			<h2 className="heading-small heading--shade-side">Venue</h2>
 			{ location }

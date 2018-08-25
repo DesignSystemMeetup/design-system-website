@@ -5,7 +5,7 @@ import Scripts from './scripts.js';
 import Event from './event.js';
 import Head from './head.js';
 import Nav from './nav.js';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Homepage = ({
 	pagetitle,
@@ -53,7 +53,7 @@ const Homepage = ({
 							<div className="innerWrapper-right" itemProp="offers" itemScope itemType="http://schema.org/Offer">
 								<span itemProp="price" content="Free" />
 								<span itemProp="priceCurrency" content="AUD" />
-								<a className="btn" itemProp="url" href={ next.link }>RSVP</a>
+								{ next.link && <a className="btn" itemProp="url" href={ next.link }>RSVP</a> }
 							</div>
 						</div>
 
@@ -64,7 +64,7 @@ const Homepage = ({
 							pagetitle={ next.pagetitle }
 							version={ next.version }
 							city={ next.city }
-							description={ next.description }
+							eventdescription={ next.eventdescription }
 							date={ next.date }
 							location={ next.location }
 							sponsors={ next.sponsors }
@@ -72,13 +72,39 @@ const Homepage = ({
 							speakers={ next.speakers }
 						/>
 
-						<strong>Past meetups</strong>
-						<ul>
+						<h2 className="heading-small pastSchedule-headline">Past meetups</h2>
+						<ul className="innerWrapper pastSchedule">
 							{
 								pastEvents.map( ( event, i ) => (
-									<li key={ i }>
-										<a href={ _relativeURL( event._url, _ID ) }>{ event.pagetitle }</a>
-									</li>
+									<Fragment key={ i }>
+										<li className="pastSchedule-item pastSchedule-item1">
+											<h3 className="eventsHeadline-title">
+												{ MakeDateTime( event.date, event.speakers[ 0 ].time ).format('Do MMM YYYY') }
+											</h3>
+											<div className="eventsHeadline-desc">
+												{
+													event.speakers.map( ( speaker, i ) => (
+														speaker.name &&
+															<Fragment key={ i }>
+																<p className="heading-small heading--shade-side">{ speaker.name }</p>
+																{ speaker.title && <p className="heading-small heading--shade">{ speaker.title }</p> }
+																<div className="pastSchedule-speakerdesc">{ _parseMD( speaker.description ) }</div>
+															</Fragment>
+													))
+												}
+											</div>
+											<a className="pastSchedule-cta" href={ _relativeURL( event._url, _ID ) }>
+												View talk details and videos
+												<svg>
+													<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#forward', _ID ) }/>
+												</svg>
+											</a>
+										</li>
+										<li className="pastSchedule-item pastSchedule-item2">
+											<span className="heading-small heading--shade-side">{ event.version } &mdash; { event.city }</span>
+											<div>{ _parseMD( event.eventdescription ) }</div>
+										</li>
+									</Fragment>
 								))
 							}
 						</ul>
