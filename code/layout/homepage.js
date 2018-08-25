@@ -77,6 +77,10 @@ const Homepage = ({
 							{
 								pastEvents.map( ( event, i ) => (
 									<Fragment key={ i }>
+										<li className="pastSchedule-item pastSchedule-item2">
+											<span className="heading-small heading--shade-side">{ event.version } &mdash; { event.city }</span>
+											<div>{ _parseMD( event.eventdescription ) }</div>
+										</li>
 										<li className="pastSchedule-item pastSchedule-item1">
 											<h3 className="eventsHeadline-title">
 												{ MakeDateTime( event.date, event.speakers[ 0 ].time ).format('Do MMM YYYY') }
@@ -99,10 +103,6 @@ const Homepage = ({
 													<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#forward', _ID ) }/>
 												</svg>
 											</a>
-										</li>
-										<li className="pastSchedule-item pastSchedule-item2">
-											<span className="heading-small heading--shade-side">{ event.version } &mdash; { event.city }</span>
-											<div>{ _parseMD( event.eventdescription ) }</div>
 										</li>
 									</Fragment>
 								))

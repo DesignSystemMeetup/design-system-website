@@ -38,12 +38,12 @@ const EventDetails = ({
 							<p className="schedule-headline">
 								<span itemProp="startDate" content={ MakeDateTime( date, speaker.time ).format() }>
 									{ speaker.time }
-								</span> &mdash; {
+								</span>
+								{
 									speaker.name
-										? <span itemScope itemProp="author" itemType="http://schema.org/Person">
+										&& <Fragment> &mdash; <span itemScope itemProp="author" itemType="http://schema.org/Person">
 												<span itemProp="name">{ speaker.name }</span>
-											</span>
-										: <Fragment> { speaker.title }</Fragment>
+											</span></Fragment>
 								}
 							</p>
 
