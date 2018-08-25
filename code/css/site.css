@@ -98,12 +98,6 @@ a:hover {
 	margin-bottom: 3rem;
 }
 
-@media (min-width: 1000px) {
-	.eventsHeadline {
-		margin-bottom: 0;
-	}
-}
-
 .eventsHeadline-fontstack {
 	position: absolute;
 	float: left;
@@ -112,12 +106,6 @@ a:hover {
 	text-align: right;
 	line-height: 1.1;
 	top: 0.55rem;
-}
-
-@media (min-width: 1000px) {
-	.eventsHeadline-fontstack {
-		top: 1.8rem;
-	}
 }
 
 .eventsHeadline-title {
@@ -138,16 +126,6 @@ a:hover {
 	display: block;
 }
 
-@media (min-width: 1000px) {
-	.eventsHeadline .innerWrapper-right {
-		padding-top: 0;
-	}
-
-	.heading-small.eventsHeadline-details-name {
-		margin-top: 2rem;
-	}
-}
-
 .eventsHeadline-back {
 	position: absolute;
 	left: 0.5rem;
@@ -155,6 +133,22 @@ a:hover {
 }
 
 @media (min-width: 1000px) {
+	.eventsHeadline {
+		margin-bottom: 0;
+	}
+
+	.eventsHeadline-fontstack {
+		top: 1.8rem;
+	}
+
+	.eventsHeadline .innerWrapper-right {
+		padding-top: 0;
+	}
+
+	.heading-small.eventsHeadline-details-name {
+		margin-top: 2rem;
+	}
+
 	.eventsHeadline-back {
 		top: 1.5rem;
 	}
