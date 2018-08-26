@@ -111,7 +111,7 @@ a:hover {
 .eventsHeadline-title {
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 2.4rem;
-	font-weight: normal;
+	font-weight: 700;
 	color: #fff;
 	margin-left: -0.1rem;
 }
@@ -182,6 +182,12 @@ a:hover {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+.schedule .heading-small,
+.pastSchedule .heading-small {
+	font-weight: 700;
+	text-transform: none;
 }
 
 .schedule-shape {
@@ -263,6 +269,8 @@ a:hover {
 }
 
 a.btn {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 700;
 	appearance: none;
 	border: 0;
 	background: #FFC000;
@@ -340,7 +348,7 @@ a.sponsor {
 footer.wrapper {
 	display: block;
 	margin-top: 6rem;
-	margin-bottom: 2rem;
+	padding-bottom: 2rem;
 	font-size: 14px;
 	text-align: center;
 	color: #647EA3;
