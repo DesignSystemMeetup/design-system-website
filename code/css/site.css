@@ -190,6 +190,10 @@ a:hover {
 	text-transform: none;
 }
 
+.details .heading-small {
+	font-weight: 700;
+}
+
 .schedule-shape {
 	position: absolute;
 	left: 0.2rem;
