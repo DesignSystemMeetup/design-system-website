@@ -87,14 +87,23 @@ const Homepage = ({
 											</h3>
 											<div className="eventsHeadline-desc">
 												{
-													event.speakers.map( ( speaker, i ) => (
-														speaker.name &&
-															<Fragment key={ i }>
-																<p className="heading-small heading--shade-side">{ speaker.name }</p>
-																{ speaker.title && <p className="heading-small heading--shade">{ speaker.title }</p> }
-																<div className="pastSchedule-speakerdesc">{ _parseMD( speaker.description ) }</div>
-															</Fragment>
-													))
+													event.speakers.map( ( speaker, i ) => {
+														if( speaker.name ) {
+															const desc = `${
+																speaker.description.split(' ').slice( 0, 20 ).join(' ')
+															}${
+																speaker.description.split(' ').length > 20 ? '&hellip;' : ''
+															}`;
+
+															return (
+																<Fragment key={ i }>
+																	<p className="heading-small heading--shade-side">{ speaker.name }</p>
+																	{ speaker.title && <p className="heading-small heading--shade">{ speaker.title }</p> }
+																	<div className="pastSchedule-speakerdesc">{ _parseMD( desc ) }</div>
+																</Fragment>
+															)
+														}
+													})
 												}
 											</div>
 											<a className="pastSchedule-cta" href={ _relativeURL( event._url, _ID ) }>

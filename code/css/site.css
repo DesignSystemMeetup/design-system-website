@@ -117,6 +117,10 @@ a:hover {
 }
 
 .eventsHeadline .innerWrapper-right {
+	margin-top: 0;
+}
+
+.homepage .eventsHeadline .innerWrapper-right {
 	padding-top: 2rem;
 	margin-top: 0.6rem;
 }
@@ -141,7 +145,7 @@ a:hover {
 		top: 1.8rem;
 	}
 
-	.eventsHeadline .innerWrapper-right {
+	.homepage .eventsHeadline .innerWrapper-right {
 		padding-top: 0;
 	}
 
