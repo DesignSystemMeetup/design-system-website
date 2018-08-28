@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
 import Moment from 'moment';
-import Nav from './nav.js';
 import React, { Fragment } from 'react';
 
 
@@ -66,7 +65,9 @@ const EventDetails = ({
 		</div>
 
 		<div className="innerWrapper-right eventDetails-details details">
+
 			<div className="details-desc" itemProp="description">{ _parseMD( eventdescription ) }</div>
+			<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
 
 			<h2 className="heading-small heading--shade-side">Venue</h2>
 			{ location }

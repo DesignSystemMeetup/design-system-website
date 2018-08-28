@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
-import Nav from './nav.js';
 import React from 'react';
 
 const Page = ({
@@ -9,6 +8,7 @@ const Page = ({
 	_relativeURL,
 	_pages,
 	pagetitle,
+	title,
 	header,
 	main,
 	footer
@@ -22,9 +22,15 @@ const Page = ({
 					{ header }
 
 					<main>
-						<Nav _ID={ _ID } _pages={ _pages } _relativeURL={ _relativeURL } />
-
 						<section>
+							<div className="pageSection">
+								<a className="pageSection-back" href={ _relativeURL( '/', _ID ) }>
+									<svg className="back" role="img" title="Go back to the homepage">
+										<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
+									</svg>
+								</a>
+								<h1>{ title }</h1>
+							</div>
 							{ main }
 						</section>
 					</main>

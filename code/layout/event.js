@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
 import Moment from 'moment';
-import Nav from './nav.js';
 import React from 'react';
 
 /**
@@ -18,7 +17,7 @@ const Event = ({
 	pagetitle,
 	version,
 	city,
-	description,
+	eventdescription,
 	date,
 	location,
 	sponsors,
@@ -66,7 +65,7 @@ const Event = ({
 							pagetitle={ pagetitle }
 							version={ version }
 							city={ city }
-							description={ description }
+							eventdescription={ eventdescription }
 							date={ date }
 							location={ location }
 							sponsors={ sponsors }

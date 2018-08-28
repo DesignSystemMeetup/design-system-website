@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Event from './event.js';
 import Head from './head.js';
-import Nav from './nav.js';
 import React, { Fragment } from 'react';
 
 const Homepage = ({
