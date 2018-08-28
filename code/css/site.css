@@ -374,8 +374,8 @@ a.sponsor {
 
 footer.wrapper {
 	display: block;
-	margin-top: 6rem;
-	padding-bottom: 2rem;
+	margin-top: 15rem;
+	padding-bottom: 5rem;
 	font-size: 14px;
 	text-align: center;
 	color: #647EA3;
@@ -383,6 +383,19 @@ footer.wrapper {
 
 footer.wrapper a {
 	color: #647EA3;
+}
+
+footer svg {
+	display: inline-block;
+	margin-left: 0.5rem;
+	width: 1rem;
+	height: 1rem;
+}
+
+.iconText,
+.iconText-text,
+.iconText-icon {
+	vertical-align: middle;
 }
 
 .pastSchedule-headline {
