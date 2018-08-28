@@ -101,4 +101,4 @@ Portions of text derived from the [Django Code of Conduct](https://www.djangopro
 
 Retrieved on November 22, 2016 from [http://citizencodeofconduct.org/](http://citizencodeofconduct.org/)
 
-Copied most parts on August 28, 2018 from [Design System Coalition NYC](https://github.com/design-systems-coalition-NYC)
+Mostly reproduced on August 28, 2018 from [Design System Coalition NYC](https://github.com/design-systems-coalition-NYC)
