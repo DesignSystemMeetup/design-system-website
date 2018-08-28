@@ -9,8 +9,8 @@ import React, { Fragment } from 'react';
  */
 const Scripts = ({ _ID, _relativeURL }) => (
 	<Fragment>
-		<script type="text/javascript" src={ _relativeURL( `/assets/js/svg4everybody.min.js`, _ID ) }/>
-		<script>svg4everybody();</script>
+		<script src="https://www.googletagmanager.com/gtag/js?id=UA-23571257-4"></script>
+		<script type="text/javascript" src={ _relativeURL( `/assets/js/script.min.js`, _ID ) }/>
 	</Fragment>
 );
 
