@@ -230,7 +230,10 @@ a:hover {
 	position: relative;
 	padding-left: 4.8rem;
 	padding-bottom: 1.5rem;
-	margin-bottom: 3rem;
+}
+
+.schedule-list + .schedule-list {
+	margin-top: 3rem;
 }
 
 .schedule-list:after {
@@ -403,7 +406,7 @@ footer svg {
 	border: 1px solid #FF9701;
 	padding: 1.5rem 1.5rem 1.5rem 4.8rem;
 	color: #FF9701;
-	margin-top: 3rem;
+	margin: 3rem 0;
 	overflow: hidden;
 }
 
@@ -421,10 +424,6 @@ footer svg {
 
 .pastSchedule-headline:before {
 	transform: rotate(45deg);
-}
-
-.pastSchedule {
-	margin-top: 3rem;
 }
 
 .pastSchedule .eventsHeadline-title {
@@ -475,10 +474,6 @@ footer svg {
 }
 
 @media (min-width: 1000px) {
-	.pastSchedule-headline {
-		margin-top: 0;
-	}
-
 	.innerWrapper.pastSchedule {
 		direction: rtl;
 		grid-template-columns: minmax(17rem, 20rem) minmax(20rem, 1fr);
