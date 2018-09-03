@@ -1,10 +1,14 @@
 {
 	"scripts": {
 		"build:css": "postcss code/css/site.css --output code/assets/css/site.min.css --use cssnano --use autoprefixer --autoprefixer.browsers \"last 4 version\" --no-map",
-		"build": "npm run build:css && cuttlebelle",
+		"build:sw": "mv docs/assets/js/sw.min.js docs/sw.min.js",
+		"build:site": "cuttlebelle",
+		"build:pages": "npm run build:site && npm run build:sw",
+		"build": "npm run build:css && npm run build:pages",
 		"watch:css": "onchange 'code/css/*.css' -- npm run build:css",
-		"watch:site": "cuttlebelle -w -n",
-		"watch": "npm run build && npm run watch:css | npm run watch:site"
+		"watch:site": "onchange 'code/**' -- npm run build:pages",
+		"watch": "npm run build && npm run watch:css | npm run watch:site | npm run server",
+		"server": "browser-sync start --server 'docs' --files 'docs'"
 	},
 	"dependencies": {
 		"cuttlebelle": "^1.0.0-alpha.56"
@@ -13,7 +17,8 @@
 		"folder": {
 			"code": "code/layout",
 			"assets": "code/assets",
-			"site": "docs"
+			"site": "docs",
+			"docs": "docs/docs"
 		}
 	},
 	"devDependencies": {
