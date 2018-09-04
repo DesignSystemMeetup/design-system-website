@@ -345,6 +345,10 @@ a:focus.btn {
 	height: 10rem;
 }
 
+.location-description {
+	margin-top: 1rem;
+}
+
 a.sponsor {
 	display: block;
 	margin-top: 2.5rem;

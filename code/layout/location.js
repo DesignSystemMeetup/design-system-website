@@ -11,7 +11,8 @@ const Partial = ({
 	name,
 	address,
 	description,
-	map
+	map,
+	_parseMD
 }) => (
 	<div className="location" itemProp="location" itemScope itemType="http://schema.org/Place">
 		<span className="location-name" itemProp="name">{ name }</span>
@@ -20,6 +21,7 @@ const Partial = ({
 			<span itemProp="addressLocality">{ address.city }</span>, <span itemProp="addressRegion">{ address.state }</span> <span itemProp="postalCode">{ address.zip }</span>
 		</div>
 		<iframe className="location-map" src={ map } frameBorder="0" style={{ border:0 }} allowFullScreen></iframe>
+		<div className="location-description">{ _parseMD( description ) }</div>
 	</div>
 );
 
