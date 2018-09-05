@@ -31,14 +31,16 @@ next:
         Sarah Karp, a Content Design Manager at Atlassian, shares what goes on behind the scenes of a product terminology decision.
         In this talk, you’ll learn how to validate a terminology choice, get buy-in from stakeholders, and streamline naming decisions into a process that can be
         shared across entire organisations.
-    # - time: "6:45"
-    #   name: Sash Singh
-    #   title: Rebuilding our Design System & what we learned along the way
-    #   description: |
-    #     Where do you begin when you don’t have a design system?
-    #     Sash leads the design team at Expert360 and will share experiences across a timeline of events such as getting stakeholder buy-in, starting a system
-    #     from scratch, naming, going mobile first and where it all ended up.
-    #     He will also cover approaches taken for vertical rhythm, design density, and colour.
+    - time: "6:45"
+      name: Alex Page
+      title: Names and positive culture
+      description: |
+        Communication is hard, what we name things affects how well we communicate.
+        Simple interactions like getting a haircut or ordering an ice cream can increase anxiety due to communication.
+        Poor communication can change outcomes, how things are perceived and how they are used.
+        When building a design system we have to name a lot of things.
+        Some times the names we give should be functional and understandable and other times there are opportunities
+        to be creative and create a positive culture.
     - time: "7:15"
       name: Ben Buchanan
       title: The Naming of Things
