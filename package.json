@@ -23,6 +23,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^9.1.2",
+		"browser-sync": "^2.24.7",
 		"cssnano": "^4.0.5",
 		"moment": "^2.22.2",
 		"onchange": "^4.1.0",
