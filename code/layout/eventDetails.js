@@ -25,56 +25,81 @@ const EventDetails = ({
 }) => (
 
 	<article className="innerWrapper eventDetails">
-		<div className="innerWrapper-left eventDetails-main">
-			<ul className="schedule">
-				{
-					speakers.map( ( speaker, i ) => (
-						<li className={`schedule-list schedule-list-${ i + 1 }`} key={ i } itemScope itemType="http://schema.org/Event">
-							<svg className="schedule-shape">
-								<use xlinkHref={ _relativeURL( `assets/svg/sprite.svg#shape${ i + 1 }`, _ID ) }/>
-							</svg>
-
-							<p className="schedule-headline">
-								<span itemProp="startDate" content={ MakeDateTime( date, speaker.time ).format() }>
-									{ speaker.time }
-								</span>
-								{
-									speaker.name
-										&& <Fragment> &mdash; <span itemScope itemProp="author" itemType="http://schema.org/Person">
-												<span itemProp="name">{ speaker.name }</span>
-											</span></Fragment>
-								}
-							</p>
-
-							{ speaker.title && <h2 className="heading-small heading--shade" itemProp="name">{ speaker.title }</h2> }
-							{ speaker.description && <div className="schedule-desc">{ _parseMD( speaker.description ) }</div> }
+		{ speakers
+			? <Fragment>
+					<div className="innerWrapper-left eventDetails-main">
+						<ul className="schedule">
 							{
-								speaker.video &&
-									<div className="video-container">
-										<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.video }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
-											<a href={ speaker.video }>
-												Watch video
-											</a>
-										</iframe>
-									</div>
+								speakers.map( ( speaker, i ) => (
+									<li className={`schedule-list schedule-list-${ i + 1 }`} key={ i } itemScope itemType="http://schema.org/Event">
+										<svg className="schedule-shape">
+											<use xlinkHref={ _relativeURL( `assets/svg/sprite.svg#shape${ i + 1 }`, _ID ) }/>
+										</svg>
+
+										<p className="schedule-headline">
+											<span itemProp="startDate" content={ MakeDateTime( date, speaker.time ).format() }>
+												{ speaker.time }
+											</span>
+											{
+												speaker.name
+													&& <Fragment> &mdash; <span itemScope itemProp="author" itemType="http://schema.org/Person">
+															<span itemProp="name">{ speaker.name }</span>
+														</span></Fragment>
+											}
+										</p>
+
+										{ speaker.title && <h2 className="heading-small heading--shade" itemProp="name">{ speaker.title }</h2> }
+										{ speaker.description && <div className="schedule-desc">{ _parseMD( speaker.description ) }</div> }
+										{
+											speaker.video &&
+												<div className="video-container">
+													<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.video }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
+														<a href={ speaker.video }>
+															Watch video
+														</a>
+													</iframe>
+												</div>
+										}
+									</li>
+								))
 							}
-						</li>
-					))
-				}
-			</ul>
-		</div>
+						</ul>
+					</div>
 
-		<div className="innerWrapper-right eventDetails-details details">
+					<div className="innerWrapper-right eventDetails-details details">
 
-			<div className="details-desc" itemProp="description">{ _parseMD( eventdescription ) }</div>
-			<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
+						<div className="details-desc" itemProp="description">{ _parseMD( eventdescription ) }</div>
+						<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
 
-			<h2 className="heading-small heading--shade-side">Venue</h2>
-			{ location }
+						<h2 className="heading-small heading--shade-side">Venue</h2>
+						{ location }
 
-			<h2 className="heading-small heading--shade-side">Sponsors (Bloody legends)</h2>
-			{ sponsors }
-		</div>
+						<h2 className="heading-small heading--shade-side">Sponsors (Bloody legends)</h2>
+						{ sponsors }
+					</div>
+				</Fragment>
+			: <Fragment>
+					<div className="innerWrapper-left eventDetails-main">
+						<ul className="schedule">
+							<li className="schedule-list schedule-list-4">
+								<svg className="schedule-shape">
+									<use xlinkHref={ _relativeURL( `assets/svg/sprite.svg#shape4`, _ID ) }/>
+								</svg>
+
+								<h2 className="heading-small heading--shade-side">We are looking for you</h2>
+
+								<p>
+									Get in contact with us if you'd like to talk at our next meetup.<br/>
+									Send us a message at <a href="mailto:talks@designsystemmeetup.com">talks@designsystemmeetup.com</a>.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div className="innerWrapper-right eventDetails-details details">
+						<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
+					</div>
+				</Fragment>
+		}
 
 	</article>
 );

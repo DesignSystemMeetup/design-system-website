@@ -6,7 +6,7 @@
 		"build:pages": "npm run build:site && npm run build:sw",
 		"build": "npm run build:css && npm run build:pages",
 		"watch:css": "onchange 'code/css/*.css' -- npm run build:css",
-		"watch:site": "onchange 'code/**' -- npm run build:pages",
+		"watch:site": "onchange 'code/**' 'content/**' -- npm run build:pages",
 		"watch": "npm run build && npm run watch:css | npm run watch:site | npm run server",
 		"server": "browser-sync start --server 'docs' --files 'docs'"
 	},
