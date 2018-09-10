@@ -24,6 +24,7 @@ const Homepage = ({
 }) => {
 
 	const pastEvents = GetPastEvents( _pages );
+	const time = next.speakers ? next.speakers[ 0 ].time : '5:30';
 
 	return (
 		<html>
@@ -44,8 +45,8 @@ const Homepage = ({
 											{ next.city }
 										</span>
 									</span>
-									<span className="eventsHeadline-title" itemProp="startDate" content={ MakeDateTime( next.date, next.speakers[ 0 ].time ).format() }>
-										{ MakeDateTime( next.date, next.speakers[ 0 ].time ).format('Do MMM YYYY') }
+									<span className="eventsHeadline-title" itemProp="startDate" content={ MakeDateTime( next.date, time ).format() }>
+										{ MakeDateTime( next.date, time ).format('Do MMM YYYY') }
 									</span>
 								</h1>
 							</div>
