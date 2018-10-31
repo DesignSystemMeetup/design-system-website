@@ -53,7 +53,7 @@ const Homepage = ({
 							<div className="innerWrapper-right" itemProp="offers" itemScope itemType="http://schema.org/Offer">
 								<span itemProp="price" content="Free" />
 								<span itemProp="priceCurrency" content="AUD" />
-								{ next.link && <a className="btn" itemProp="url" href={ next.link }>Register</a> }
+								{ next.link && <a className="btn" itemProp="url" href={ next.link } target="_blank" rel="noopener noreferrer">Register</a> }
 							</div>
 						</div>
 
