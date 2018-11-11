@@ -22,6 +22,15 @@ next:
   - time: "5:30"
     title: Open doors
   - time: "6:15"
+    name: Charlotte Jackson
+    description: |
+      A living design system that is consumed by other teams is an internal product, and maintaining it comes with challenges. This talk shares Ansarada's
+      approach to maintaining a design system and why it needs product management to be successful.
+
+      **Bio:**
+      Charlotte is a Product Manager at Ansarada. In her previous role at Clearleft in the UK, she was a front end developer who built component libraries for
+      clients, and helped teams build their own. Two things she loves about her job are writing documentation and facilitating collaboration.
+  - time: "6:45"
     name: Tom Butler
     title: Design System as a product
     description: |
@@ -32,15 +41,6 @@ next:
       Tom has more than 14 years' experience building and leading software products and teams at eBay and Atlassian. Tom enjoys story-telling and coaching as
       much as building product visions and making sense of the world with frameworks and diagrams. He is currently Principal Product Manager for the Atlassian
       Design System and his favourite products are his two incredible daughters.
-  - time: "6:45"
-    name: Charlotte Jackson
-    description: |
-      A living design system that is consumed by other teams is an internal product, and maintaining it comes with challenges. This talk shares Ansarada's
-      approach to maintaining a design system and why it needs product management to be successful.
-
-      **Bio:**
-      Charlotte is a Product Manager at Ansarada. In her previous role at Clearleft in the UK, she was a front end developer who built component libraries for
-      clients, and helped teams build their own. Two things she loves about her job are writing documentation and facilitating collaboration.
   - time: "7:15"
     name: Sam Keene
     description: |
