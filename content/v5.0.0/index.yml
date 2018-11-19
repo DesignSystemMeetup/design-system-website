@@ -1,0 +1,59 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v5.0.0
+version: v5.0.0
+city: Sydney
+date: 2018-11-12
+location: /_locations/atlassian-new.md
+sponsors:
+  - /_sponsors/atlassian.md
+  - /_sponsors/thinkmill.md
+  - /_sponsors/tomwalker.md
+link: https://www.meetup.com/Design-System/events/254605914
+eventdescription: |
+  Design System meetup Sydney v5.0.0 is up.
+
+speakers:
+- time: "5:30"
+  title: Open doors
+- time: "6:15"
+  name: Charlotte Jackson
+  description: |
+    A living design system that is consumed by other teams is an internal product, and maintaining it comes with challenges. This talk shares Ansarada's
+    approach to maintaining a design system and why it needs product management to be successful.
+
+    **Bio:**
+    Charlotte is a Product Manager at Ansarada. In her previous role at Clearleft in the UK, she was a front end developer who built component libraries for
+    clients, and helped teams build their own. Two things she loves about her job are writing documentation and facilitating collaboration.
+- time: "6:45"
+  name: Tom Butler
+  title: Design System as a product
+  description: |
+    Come and hear what we've learnt at Atlassian since we started to treat our Design System as a product for products
+    and take away 5 steps you can follow to apply product thinking right away.
+
+    **Bio:**
+    Tom has more than 14 years' experience building and leading software products and teams at eBay and Atlassian. Tom enjoys story-telling and coaching as
+    much as building product visions and making sense of the world with frameworks and diagrams. He is currently Principal Product Manager for the Atlassian
+    Design System and his favourite products are his two incredible daughters.
+- time: "7:15"
+  name: Sam Keene
+  description: |
+    Designing for immersive computing (AR, VR, and new ambient surfaces) requires a new way of thinking about design, new design systems, and a new type of
+    design team made up of diverse backgrounds and diverse skillsets. Sam will discuss his work at Google designing and prototyping immersive computing
+    systems across VR and world scale AR, and how this fits into an historical context of art and design that goes back centuries. He will also discuss how
+    Google thinks about immersive computing, their design process, design systems and the new skills required by designers who are working within this nascent
+    territory.
+
+    **Bio:**
+    Sam Keene works as a Lead User Experience Engineer at Google. His work focuses on virtual and augmented reality platforms, and he has recently published
+    a book that covers the design and development for Google's AR and VR platforms:
+    ["The Google Daydream VR Cookbook"](https://www.amazon.com/Google-Daydream-VR-Cookbook-Building/dp/013484551X). As a kid in the late ’80s, he started
+    programming on a Commodore 64 and has worked professionally as a mobile software engineer and interaction designer for more than a decade. Sam has
+    lectured in Interactive Media at the Royal Melbourne Institute of Technology, and his work has won numerous industry accolades including Gold Cannes
+    Lions, IxDA, D&AD, and One Show awards.
+
+footer: /_shared/footer.md
