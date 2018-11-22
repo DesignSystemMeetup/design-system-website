@@ -5,16 +5,16 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v6.1.0
-  version: v6.1.0
-  city: Sydney CBD
+  pagetitle: Design System meetup Sydney v6.0.0
+  version: v6.0.0
+  city: Sydney
   date: 2019-01-14
   location: null
   sponsors:
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
   eventdescription: |
-    Design System meetup Sydney v6.1.0 is up.
+    Design System meetup Sydney v6.0.0 is up.
 
   speakers:
     null
