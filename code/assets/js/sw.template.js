@@ -1,47 +1,22 @@
-const VERSION = "1.0.58";
-const NAME = `design-system-meetup-${VERSION}`;
-
-
 self.oninstall = evt => {
 	evt.waitUntil(
-		caches.open( NAME )
-		.then((cache) => {
-			return cache.addAll([
-				'/',
-				'/assets/css/site.min.css',
-				'/assets/img/atlassian.png',
-				'/assets/img/dta.png',
-				'/assets/img/expert360.png',
-				'/assets/img/invision.png',
-				'/assets/img/og-image.jpg',
-				'/assets/img/thinkmill.png',
-				'/assets/img/tomwalker.png',
-				'/assets/img/zip.png',
-				'/assets/js/script.min.js',
-				'/assets/svg/sprite.svg',
-				'/code-of-conduct',
-				'/v1.0.0',
-				'/v2.0.0',
-				'/v3.0.0',
-				'/v4.0.0',
-				'/v5.0.0',
-			]);
+		caches.open($name).then(cache => {
+			return cache.addAll($filesToCache);
 		})
 	);
 
-	// replaces the old one automatically
+	// replaces the old SW automatically
 	self.skipWaiting();
 };
 
 self.onactivate = evt => {
-	console.log("On Activate");
-
+	console.log('Activating service worker');
 	evt.waitUntil(
 		caches
 		.keys()
 		.then((cacheNames) => {
 			const deleteOldCaches = cacheNames.map((cacheName) => {
-				if (cacheName !== NAME){
+				if (cacheName !== $name){
 					return caches.delete(cacheName);
 				}
 				// Leave the current cache along
@@ -60,9 +35,8 @@ self.onactivate = evt => {
 
 
 self.onfetch = evt => {
-	//evt.waitUntil(
 	evt.respondWith(
-		caches.open(NAME).then(function(cache) {
+		caches.open($name).then(function(cache) {
 
 			//checks if it's in cache
 			return cache.match(evt.request).then(function(cacheResponse) {
@@ -74,6 +48,6 @@ self.onfetch = evt => {
 			  })
 			  return cacheResponse || fetchPromise;
 			})
-		  })
+		})
 	);
 };

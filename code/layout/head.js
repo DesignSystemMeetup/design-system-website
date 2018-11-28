@@ -1,3 +1,4 @@
+import { RelativeURL } from './helper.js';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -7,7 +8,7 @@ import React from 'react';
  *
  * @disable-docs
  */
-const Head = ({ _ID, _relativeURL, pagetitle }) => (
+const Head = ({ _ID, pagetitle }) => (
 	<head>
 		<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
 
@@ -40,7 +41,7 @@ const Head = ({ _ID, _relativeURL, pagetitle }) => (
 		<meta name="twitter:name" content="Design System Meetup Sydney"/>
 		<meta name="twitter:image" content="https://designsystemmeetup.com/assets/img/og-image.jpg"/>
 		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet"/>
-		<link rel="stylesheet" href={_relativeURL(`/assets/css/site.min.css`, _ID)}/>
+		<link rel="stylesheet" href={ RelativeURL(`/assets/css/site.min.css`, _ID) }/>
 	</head>
 );
 

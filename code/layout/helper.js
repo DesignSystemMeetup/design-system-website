@@ -1,4 +1,5 @@
 import Moment from 'moment';
+import Path from 'path';
 
 
 const GetEvents = ( _pages ) => {
@@ -29,3 +30,14 @@ export const MakeDateTime = ( date, time ) => {
 		.hour( parseInt( hour ) + 12 )
 		.minute( minute );
 };
+
+export const RelativeURL = ( URL, ID ) => {
+	let relative = `${ Path.posix.relative( `/${ ID === 'index' ? '.' : ID }/`, `/${ URL }` ) }`;
+	console.log(`/${ ID === 'index' ? '.' : ID }/`, ' ', `/${ URL }`, ' --> ' , relative);
+
+	if( !relative.endsWith('.css') && !relative.endsWith('.js') && !relative.includes('.svg') ) {
+		relative = `${ relative }/`;
+	}
+
+	return relative;
+}
