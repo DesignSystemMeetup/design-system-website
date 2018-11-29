@@ -2,73 +2,24 @@ const fs = require("fs");
 const PKG = require("../../package.json");
 const NAME = `"design-system-meetup-${PKG.version}"`;
 
-const filesToCacheOld = [
-	'"/"',
-	'"/assets/css/site.min.css"',
-	'"/assets/img/atlassian.png"',
-	'"/assets/img/dta.png"',
-	'"/assets/img/expert360.png"',
-	'"/assets/img/invision.png"',
-	'"/assets/img/og-image.jpg"',
-	'"/assets/img/thinkmill.png"',
-	'"/assets/img/tomwalker.png"',
-	'"/assets/img/zip.png"',
-	'"/assets/js/script.min.js"',
-	'"/assets/svg/sprite.svg"',
-	'"/code-of-conduct"',
-	'"/v1.0.0"',
-	'"/v2.0.0"',
-	'"/v3.0.0"',
-	'"/v4.0.0"',
-	'"/v5.0.0"'
-];
-
-let filesToCache = [
-	'/'
-]
-
-const Wait = time => new Promise( resolve => setTimeout(() => resolve(), time) );
-
-
-// read
-// 	loop
-// 	 isDir
-// 	  read
-
+let filesToCache = ['"/"']
 
 function read(dir) {
 	fs.readdir(dir, function(err, children) {
-
-		console.log('children ', children);
-
-		//clean up children
-
-
-		filesToCache.concat(children);
-
-		children.forEach(child => {
-			read(`${dir}/${child}`)
-		});
+		if(children){
+			children = children.filter(word => word !== 'CNAME');
+			children.forEach(child => read(`${dir}/${child}`));
+		}else{
+			let item = dir.replace('docs', '').replace('/index.html', '');
+			if(item !== ''){filesToCache.push(`"${item}"`)}
+		}
 	});
 }
 
 read('docs');
 
-fs.readdir('docs', function(err, dirs) {
-	for (var i=0; i<dirs.length; i++) {
-		filesToCache.push(dirs[i]);
-	}
-});
-
-// fs.readdirsync('docs/assets/img', function(err, dirs) {
-// 	for (var i=0; i<dirs.length; i++) {
-// 		filesToCache.push(dirs[i]);
-// 	}
-// });
-
-console.log(filesToCache);
-
 fs.readFile('code/assets/js/sw.template.js', 'utf8', function(err, template) {
+	console.log('Service worker will cache these files...', filesToCache);
 	let data = template;
 	data = data.replace(/\$name/g, NAME);
 	data = data.replace(/\$filesToCache/g, filesToCache);
@@ -78,6 +29,5 @@ fs.readFile('code/assets/js/sw.template.js', 'utf8', function(err, template) {
 		if (err) {
 			return console.log(err);
 		}
-		console.log("Service Worker was built!");
 	});
 });
