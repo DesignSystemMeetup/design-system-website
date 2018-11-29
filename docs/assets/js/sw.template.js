@@ -18,8 +18,7 @@ self.onactivate = evt => {
 				if (cacheName !== $name){
 					return caches.delete(cacheName);
 				}
-				// Leave the current cache along
-				return Promise.resolve;
+				// Leave the current cache alone
 			});
 
 			//removing old cache
