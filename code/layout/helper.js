@@ -33,11 +33,14 @@ export const MakeDateTime = ( date, time ) => {
 
 export const RelativeURL = ( URL, ID ) => {
 	let relative = `${ Path.posix.relative( `/${ ID === 'index' ? '.' : ID }/`, `/${ URL }` ) }`;
-	console.log(`/${ ID === 'index' ? '.' : ID }/`, ' ', `/${ URL }`, ' --> ' , relative);
 
-	if( !relative.endsWith('.css') && !relative.endsWith('.js') && !relative.includes('.svg') ) {
+	if(
+		!relative.endsWith('.css') &&
+		!relative.endsWith('.js') &&
+		!relative.endsWith('.png') &&
+		!relative.includes('.svg')
+	) {
 		relative = `${ relative }/`;
 	}
-
 	return relative;
 }

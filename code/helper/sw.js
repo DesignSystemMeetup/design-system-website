@@ -1,33 +1,61 @@
-const fs = require("fs");
-const path = require("path");
-const PKG = require("../../package.json");
-const NAME = `"design-system-meetup-${PKG.version}"`;
+const fs = require('fs');
+const path = require('path');
+const PKG = require('../../package.json');
 
-let filesToCache = ['"/"']
+const NAME = `'design-system-meetup-${PKG.version}'`;
 
-function read(dir) {
-	fs.readdirSync(dir).forEach(child => {
-		// if child is a file
-		if(path.extname(child)){
-			let item = `${dir.replace('docs', '')}/${child.replace('/index.html', '')}`;
-			if(item !== ''){filesToCache.push(`"${item}"`)}
-		//otherwise it's a folder
-		}else if(!child.includes('CNAME')){
-			read(`${dir}/${child}`);
+const isDirectory = (dir, file) => fs.statSync(path.join(dir, file)).isDirectory();
+
+const listFilesInFolder = (dir, root) => {
+	root = root || dir;
+	let files = [];
+
+	fs
+		.readdirSync(dir)
+		.filter(file =>
+			!file.startsWith('.') &&
+			file !== 'CNAME' &&
+			file !== 'sw.min.js' &&
+			file !== 'sw.template.js'
+		)
+		.forEach(file => {
+			if (!isDirectory(dir, file)) {
+				const subPath = `${dir}/${file.replace('index.html', '')}`;
+				const filePath = path.relative(root, subPath);
+				const ext = fs.statSync(subPath).isDirectory() ? '/' : '';
+				files.push(JSON.stringify(`${filePath}${ext}`));
+			}
+			else {
+				files = [...files, ...listFilesInFolder(`${dir}/${file}`, root)];
+			}
 		}
-	})
-}
+		);
+	return files;
+};
 
-read('docs');
-
-fs.readFile('code/assets/js/sw.template.js', 'utf8', function(err, template) {
-	//console.log('Service worker will cache these files...', filesToCache);
-	let file = template
-		.replace(/\$name/g, NAME)
-		.replace(/\$filesToCache/g, filesToCache)
-		.replace(/^\s*[\r\n]/gm, '');
-
-	fs.writeFile("docs/assets/js/sw.min.js", file, function(err) {
-		if (err) {return console.log(err)}
+const getTemplateText = (NAME, filesToCache) => {
+	return new Promise((resolve, reject) => {
+		try {
+			fs.readFile('code/assets/js/sw.template.js', 'utf8', (err, template) => {
+				let file = template
+					.replace(/\{\{NAME\}\}/g, NAME)
+					.replace(/\$filesToCache/g, filesToCache)
+					.replace(/^\s*[\r\n]/gm, '');
+				resolve(file);
+			});
+		}
+		catch (error) {
+			reject(error);
+		}
 	});
-});
+};
+
+const filesToCache = listFilesInFolder('docs')
+
+getTemplateText(NAME, filesToCache)
+	.then(file => {
+		fs.writeFile('docs/sw.min.js', file, error => {
+			if (error) console.log(error);
+		});
+	})
+	.catch(error => console.log(error));

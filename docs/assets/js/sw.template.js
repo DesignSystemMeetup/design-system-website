@@ -1,7 +1,7 @@
-self.oninstall = evt => {
-	evt.waitUntil(
-		caches.open($name).then(cache => {
-			return cache.addAll($filesToCache);
+self.oninstall = event => {
+	event.waitUntil(
+		caches.open({{NAME}}).then(cache => {
+			return cache.addAll([$filesToCache]);
 		})
 	);
 
@@ -9,13 +9,13 @@ self.oninstall = evt => {
 	self.skipWaiting();
 };
 
-self.onactivate = evt => {
-	evt.waitUntil(
+self.onactivate = event => {
+	event.waitUntil(
 		caches
 		.keys()
 		.then((cacheNames) => {
 			const deleteOldCaches = cacheNames.map((cacheName) => {
-				if (cacheName !== $name){
+				if (cacheName !== {{NAME}}){
 					return caches.delete(cacheName);
 				}
 				// Leave the current cache alone
@@ -31,20 +31,19 @@ self.onactivate = evt => {
 
 };
 
-
-self.onfetch = evt => {
-	evt.respondWith(
-		caches.open($name).then(function(cache) {
+self.onfetch = event => {
+	event.respondWith(
+		caches.open({{NAME}}).then(function(cache) {
 
 			//checks if it's in cache
-			return cache.match(evt.request).then(function(cacheResponse) {
+			return cache.match(event.request).then(function(cacheResponse) {
 
-			  // fetches latest resource from server
-			  var fetchPromise = fetch(evt.request).then(function(networkResponse) {
-				cache.put(evt.request, networkResponse.clone());
-				return networkResponse;
-			  })
-			  return cacheResponse || fetchPromise;
+			  	// fetches latest resource from server
+				var fetchPromise = fetch(event.request).then(function(networkResponse) {
+					cache.put(event.request, networkResponse.clone());
+					return networkResponse;
+				})
+				return cacheResponse || fetchPromise;
 			})
 		})
 	);
