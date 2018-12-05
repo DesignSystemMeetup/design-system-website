@@ -1,7 +1,7 @@
 self.oninstall = event => {
 	event.waitUntil(
 		caches.open({{NAME}}).then(cache => {
-			return cache.addAll([$filesToCache]);
+			return cache.addAll([{{filesToCache}}]);
 		})
 	);
 
