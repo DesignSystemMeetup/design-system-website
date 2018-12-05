@@ -37,7 +37,7 @@ const getTemplateText = (NAME, filesToCache) => {
 	return new Promise((resolve, reject) => {
 		try {
 			fs.readFile('code/assets/js/sw.template.js', 'utf8', (err, template) => {
-				let file = template
+				const file = template
 					.replace(/\{\{NAME\}\}/g, NAME)
 					.replace(/\$filesToCache/g, filesToCache)
 					.replace(/^\s*[\r\n]/gm, '');
