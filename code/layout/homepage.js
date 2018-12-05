@@ -1,4 +1,4 @@
-import { GetPastEvents, MakeDateTime, RelativeURL } from './helper.js';
+import { GetPastEvents, MakeDateTime } from './helper.js';
 import EventDetails from './eventDetails.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
@@ -18,6 +18,7 @@ const Homepage = ({
 	_ID,
 	_nav,
 	_pages,
+	_relativeURL,
 	_store,
 	_parseMD
 }) => {
@@ -27,7 +28,7 @@ const Homepage = ({
 
 	return (
 		<html>
-			<Head _ID={ _ID } _relativeURL={ RelativeURL } pagetitle={ pagetitle }/>
+			<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
 			<body className="homepage">
 				<div className="wrapper">
@@ -58,7 +59,7 @@ const Homepage = ({
 
 						<EventDetails
 							_parseMD={ _parseMD }
-							_relativeURL={ RelativeURL }
+							_relativeURL={ _relativeURL }
 							_ID={ _ID }
 							pagetitle={ next.pagetitle }
 							version={ next.version }
@@ -105,10 +106,10 @@ const Homepage = ({
 													})
 												}
 											</div>
-											<a className="pastSchedule-cta" href={ RelativeURL( event._url, _ID ) }>
+											<a className="pastSchedule-cta" href={ _relativeURL( event._url, _ID ) }>
 												View talk details and videos
 												<svg>
-													<use xlinkHref={ RelativeURL( 'assets/svg/sprite.svg#forward', _ID ) }/>
+													<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#forward', _ID ) }/>
 												</svg>
 											</a>
 										</li>
@@ -121,7 +122,7 @@ const Homepage = ({
 
 				{ footer }
 
-				<Scripts _ID={ _ID } _relativeURL={ RelativeURL }/>
+				<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 			</body>
 		</html>
 	);

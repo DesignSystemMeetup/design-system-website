@@ -1,4 +1,3 @@
-import { RelativeURL } from './helper.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
@@ -6,6 +5,7 @@ import React from 'react';
 
 const Page = ({
 	_ID,
+	_relativeURL,
 	_pages,
 	pagetitle,
 	title,
@@ -15,7 +15,7 @@ const Page = ({
 }) => {
 	return (
 		<html>
-			<Head _ID={ _ID } _relativeURL={ RelativeURL } pagetitle={ pagetitle }/>
+			<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
 			<body className="page">
 				<div className="wrapper">
@@ -24,9 +24,9 @@ const Page = ({
 					<main>
 						<section>
 							<div className="pageSection">
-								<a className="pageSection-back" href={ RelativeURL( '/', _ID ) }>
+								<a className="pageSection-back" href={ _relativeURL( '/', _ID ) }>
 									<svg className="back" role="img" title="Go back to the homepage">
-										<use xlinkHref={ RelativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
+										<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
 									</svg>
 								</a>
 								<h1>{ title }</h1>
@@ -38,7 +38,7 @@ const Page = ({
 
 				{ footer }
 
-				<Scripts _ID={ _ID } _relativeURL={ RelativeURL }/>
+				<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 			</body>
 		</html>
 	);

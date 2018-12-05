@@ -1,4 +1,4 @@
-import { MakeDateTime, RelativeURL } from './helper.js';
+import { MakeDateTime } from './helper.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
@@ -12,6 +12,7 @@ import React, { Fragment } from 'react';
 const EventDetails = ({
 	_ID,
 	_parseMD,
+	_relativeURL,
 	pagetitle,
 	version,
 	city,
@@ -32,7 +33,7 @@ const EventDetails = ({
 								speakers.map( ( speaker, i ) => (
 									<li className={`schedule-list schedule-list-${ i + 1 }`} key={ i } itemScope itemType="http://schema.org/Event">
 										<svg className="schedule-shape">
-											<use xlinkHref={ RelativeURL( `assets/svg/sprite.svg#shape${ i + 1 }`, _ID ) }/>
+											<use xlinkHref={ _relativeURL( `assets/svg/sprite.svg#shape${ i + 1 }`, _ID ) }/>
 										</svg>
 
 										<p className="schedule-headline">
@@ -68,7 +69,7 @@ const EventDetails = ({
 					<div className="innerWrapper-right eventDetails-details details">
 
 						<div className="details-desc" itemProp="description">{ _parseMD( eventdescription ) }</div>
-						<a href={ RelativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
+						<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
 
 						<h2 className="heading-small heading--shade-side">Venue</h2>
 						{ location }
@@ -82,7 +83,7 @@ const EventDetails = ({
 						<ul className="schedule">
 							<li className="schedule-list schedule-list-4">
 								<svg className="schedule-shape">
-									<use xlinkHref={ RelativeURL( `assets/svg/sprite.svg#shape4`, _ID ) }/>
+									<use xlinkHref={ _relativeURL( `assets/svg/sprite.svg#shape4`, _ID ) }/>
 								</svg>
 
 								<h2 className="heading-small heading--shade-side">We are looking for you</h2>
@@ -95,7 +96,7 @@ const EventDetails = ({
 						</ul>
 					</div>
 					<div className="innerWrapper-right eventDetails-details details">
-						<a href={ RelativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
+						<a href={ _relativeURL( '/code-of-conduct/', _ID ) }>Code of Conduct</a>
 					</div>
 				</Fragment>
 		}

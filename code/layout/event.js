@@ -1,5 +1,5 @@
 import EventDetails from './eventDetails.js';
-import { MakeDateTime, RelativeURL } from './helper.js';
+import { MakeDateTime } from './helper.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
@@ -13,6 +13,7 @@ const Event = ({
 	_ID,
 	_parseMD,
 	_pages,
+	_relativeURL,
 	pagetitle,
 	version,
 	city,
@@ -26,7 +27,7 @@ const Event = ({
 	footer
 }) => (
 	<html>
-		<Head _ID={ _ID } _relativeURL={ RelativeURL } pagetitle={ pagetitle }/>
+		<Head _ID={ _ID } _relativeURL={ _relativeURL } pagetitle={ pagetitle }/>
 
 		<body className="eventpage">
 			<div className="wrapper">
@@ -36,9 +37,9 @@ const Event = ({
 					<section itemScope itemType="http://schema.org/Event">
 						<div className="innerWrapper eventsHeadline">
 							<div className="innerWrapper-left eventsHeadline-main">
-								<a className="eventsHeadline-back" href={ RelativeURL( '/', _ID ) }>
+								<a className="eventsHeadline-back" href={ _relativeURL( '/', _ID ) }>
 									<svg className="back" role="img" title="Go back to the homepage">
-										<use xlinkHref={ RelativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
+										<use xlinkHref={ _relativeURL( 'assets/svg/sprite.svg#back', _ID ) }/>
 									</svg>
 								</a>
 								<h1>
@@ -59,7 +60,7 @@ const Event = ({
 
 						<EventDetails
 							_parseMD={ _parseMD }
-							_relativeURL={ RelativeURL }
+							_relativeURL={ _relativeURL }
 							_ID={ _ID }
 							pagetitle={ pagetitle }
 							version={ version }
@@ -77,7 +78,7 @@ const Event = ({
 
 			{ footer }
 
-			<Scripts _ID={ _ID } _relativeURL={ RelativeURL }/>
+			<Scripts _ID={ _ID } _relativeURL={ _relativeURL }/>
 		</body>
 	</html>
 );
