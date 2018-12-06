@@ -40,11 +40,11 @@ const getTemplateText = (NAME, filesToCache) => {
 		.replace(/\{\{NAME\}\}/g, NAME)
 		.replace(/\{\{FILES\}\}/g, filesToCache);
 
-	let minified = minify(template);
+	const minified = minify(template);
 	return minified.code;
 };
 
 const filesToCache = listFilesInFolder('docs')
-const sw_file = getTemplateText(NAME, filesToCache);
+const swFile = getTemplateText(NAME, filesToCache);
 
-fs.writeFileSync('docs/sw.min.js', sw_file, error => {if (error) console.log(error);});
+fs.writeFileSync('docs/sw.min.js', swFile );
