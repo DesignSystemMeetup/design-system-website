@@ -1,7 +1,8 @@
 {
+	"version": "1.0.1",
 	"scripts": {
 		"build:css": "postcss code/css/site.css --output code/assets/css/site.min.css --use cssnano --use autoprefixer --autoprefixer.browsers \"last 4 version\" --no-map",
-		"build:sw": "mv docs/assets/js/sw.min.js docs/sw.min.js",
+		"build:sw": "node code/helper/sw.js",
 		"build:site": "cuttlebelle",
 		"build:pages": "npm run build:site && npm run build:sw",
 		"build": "npm run build:css && npm run build:pages",
@@ -11,6 +12,7 @@
 		"server": "browser-sync start --server 'docs' --files 'docs'"
 	},
 	"dependencies": {
+		"babel-minify": "^0.5.0",
 		"cuttlebelle": "^1.0.0-alpha.56"
 	},
 	"cuttlebelle": {

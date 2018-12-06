@@ -40,7 +40,7 @@ const Head = ({ _ID, _relativeURL, pagetitle }) => (
 		<meta name="twitter:name" content="Design System Meetup Sydney"/>
 		<meta name="twitter:image" content="https://designsystemmeetup.com/assets/img/og-image.jpg"/>
 		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet"/>
-		<link rel="stylesheet" href={_relativeURL(`/assets/css/site.min.css`, _ID)}/>
+		<link rel="stylesheet" href={ _relativeURL(`/assets/css/site.min.css`, _ID) }/>
 	</head>
 );
 
