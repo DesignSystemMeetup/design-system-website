@@ -12,6 +12,7 @@
 		"server": "browser-sync start --server 'docs' --files 'docs'"
 	},
 	"dependencies": {
+		"babel-minify": "^0.5.0",
 		"cuttlebelle": "^1.0.0-alpha.56"
 	},
 	"cuttlebelle": {

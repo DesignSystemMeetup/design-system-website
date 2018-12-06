@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const minify = require("babel-minify");
 const PKG = require('../../package.json');
 
 const NAME = `'design-system-meetup-${PKG.version}'`;
@@ -34,28 +35,16 @@ const listFilesInFolder = (dir, root) => {
 };
 
 const getTemplateText = (NAME, filesToCache) => {
-	return new Promise((resolve, reject) => {
-		try {
-			fs.readFile('code/assets/js/sw.template.js', 'utf8', (err, template) => {
-				const file = template
-					.replace(/\{\{NAME\}\}/g, NAME)
-					.replace(/\$filesToCache/g, filesToCache)
-					.replace(/^\s*[\r\n]/gm, '');
-				resolve(file);
-			});
-		}
-		catch (error) {
-			reject(error);
-		}
-	});
+	let template = fs
+		.readFileSync('code/assets/js/sw.template.js', 'utf8')
+		.replace(/\{\{NAME\}\}/g, NAME)
+		.replace(/\{\{FILES\}\}/g, filesToCache);
+
+	let minified = minify(template);
+	return minified.code;
 };
 
 const filesToCache = listFilesInFolder('docs')
+const sw_file = getTemplateText(NAME, filesToCache);
 
-getTemplateText(NAME, filesToCache)
-	.then(file => {
-		fs.writeFile('docs/sw.min.js', file, error => {
-			if (error) console.log(error);
-		});
-	})
-	.catch(error => console.log(error));
+fs.writeFileSync('docs/sw.min.js', sw_file, error => {if (error) console.log(error);});
