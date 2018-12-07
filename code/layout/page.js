@@ -1,8 +1,8 @@
+import { RelativeURL } from './helper.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
 import React from 'react';
-import { RelativeURL } from './helper.js';
 
 const Page = ({
 	_ID,
@@ -15,7 +15,7 @@ const Page = ({
 }) => {
 	return (
 		<html>
-			<Head _ID={ _ID } _relativeURL={ RelativeURL } pagetitle={ pagetitle }/>
+			<Head _ID={ _ID } pagetitle={ pagetitle }/>
 
 			<body className="page">
 				<div className="wrapper">
@@ -38,7 +38,7 @@ const Page = ({
 
 				{ footer }
 
-				<Scripts _ID={ _ID } _relativeURL={ RelativeURL }/>
+				<Scripts _ID={ _ID }/>
 			</body>
 		</html>
 	);

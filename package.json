@@ -1,5 +1,5 @@
 {
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"scripts": {
 		"build:css": "postcss code/css/site.css --output code/assets/css/site.min.css --use cssnano --use autoprefixer --autoprefixer.browsers \"last 4 version\" --no-map",
 		"build:sw": "node code/helper/sw.js",

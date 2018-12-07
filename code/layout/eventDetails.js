@@ -1,10 +1,10 @@
 import { MakeDateTime } from './helper.js';
+import { RelativeURL } from './helper.js';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
 import Moment from 'moment';
-import React, { Fragment } from 'react';
-import { RelativeURL } from './helper.js';
 
 /**
  * The Event detail component

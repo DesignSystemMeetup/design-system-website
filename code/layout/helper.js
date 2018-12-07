@@ -42,5 +42,6 @@ export const RelativeURL = ( URL, ID ) => {
 	) {
 		relative = `${ relative }/`;
 	}
+
 	return relative;
 }

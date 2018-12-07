@@ -28,7 +28,7 @@ const Homepage = ({
 
 	return (
 		<html>
-			<Head _ID={ _ID } _relativeURL={ RelativeURL } pagetitle={ pagetitle }/>
+			<Head _ID={ _ID } pagetitle={ pagetitle }/>
 
 			<body className="homepage">
 				<div className="wrapper">
@@ -59,7 +59,6 @@ const Homepage = ({
 
 						<EventDetails
 							_parseMD={ _parseMD }
-							_relativeURL={ RelativeURL }
 							_ID={ _ID }
 							pagetitle={ next.pagetitle }
 							version={ next.version }
@@ -122,7 +121,7 @@ const Homepage = ({
 
 				{ footer }
 
-				<Scripts _ID={ _ID } _relativeURL={ RelativeURL }/>
+				<Scripts _ID={ _ID }/>
 			</body>
 		</html>
 	);

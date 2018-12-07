@@ -1,3 +1,4 @@
+import { RelativeURL } from './helper.js';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,9 +8,9 @@ import PropTypes from 'prop-types';
  *
  * @disable-docs
  */
-const Partial = ({ name, link, description, logo, _parseMD, _relativeURL, _ID }) => (
+const Partial = ({ name, link, description, logo, _parseMD, _ID }) => (
 	<a className="sponsor" href={ link } rel="external">
-		<img className="sponsor-img" src={ _relativeURL( logo, _ID ) } alt={`${ name } logo`}/>
+		<img className="sponsor-img" src={ RelativeURL( logo, _ID ) } alt={`${ name } logo`}/>
 		<div className="sponsor-desc">{ _parseMD( description ) }</div>
 	</a>
 );

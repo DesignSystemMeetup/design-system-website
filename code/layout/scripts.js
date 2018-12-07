@@ -1,3 +1,4 @@
+import { RelativeURL } from './helper.js';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,10 +8,10 @@ import PropTypes from 'prop-types';
  *
  * @disable-docs
  */
-const Scripts = ({ _ID, _relativeURL }) => (
+const Scripts = ({ _ID }) => (
 	<Fragment>
 		<script src="https://www.googletagmanager.com/gtag/js?id=UA-23571257-4"></script>
-		<script type="text/javascript" src={ _relativeURL( `/assets/js/script.min.js`, _ID ) }/>
+		<script type="text/javascript" src={ RelativeURL( `/assets/js/script.min.js`, _ID ) }/>
 	</Fragment>
 );
 
