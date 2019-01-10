@@ -9,15 +9,34 @@ next:
   version: v6.0.0
   city: Sydney
   date: 2019-01-14
-  location: null
+  location: CommBank, TBA
   sponsors:
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
+  link: https://www.meetup.com/Design-System/events/257951103
   eventdescription: |
     Design System meetup Sydney v6.0.0 is up.
 
   speakers:
-    null
+    - time: "5:30"
+      title: Open doors
+    - time: "6:15"
+      name: Ben Conolly
+      description: |
+        A design system that nobody can understand how to use is a design system nobody can use. This is why good documentation is so key to having a well-used and well-loved design system. Through this talk, I am going to be looking how we solved several of these problems in Atlaskit:
+
+        * Cross-component tooling help make your docs consistent
+        * Keeping documentation up-to-date (docs in code, prop type reading)
+        * Keeping documentation in code (react-markings, now mdx)
+        * Demonstrating proper usages (our learnings about examples)
+        * Giving designers access to the design system (sketch plugin)
+        * An integrated single site (where we have failed)
+    - time: "7:00"
+      name: Ciro Nunes
+      title: What I’ve learned building automated documentation for Ansarada’s design system
+      description: |
+        That’s right. We are building automated docs for our design system, but that’s not the best part. It will work with any React project. In this talk I’m
+        gonna share with you what I’ve learned in the process and show you how we built it (for the techies)
 
 footer:
   - /_shared/footer.md
