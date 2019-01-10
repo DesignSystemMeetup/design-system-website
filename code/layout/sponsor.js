@@ -10,7 +10,9 @@ import PropTypes from 'prop-types';
  */
 const Partial = ({ name, link, description, logo, _parseMD, _ID }) => (
 	<a className="sponsor" href={ link } rel="external">
-		<img className="sponsor-img" src={ RelativeURL( logo, _ID ) } alt={`${ name } logo`}/>
+		{
+			logo && <img className="sponsor-img" src={ RelativeURL( logo, _ID ) } alt={`${ name } logo`}/>
+		}
 		<div className="sponsor-desc">{ _parseMD( description ) }</div>
 	</a>
 );

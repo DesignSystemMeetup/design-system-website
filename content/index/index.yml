@@ -9,7 +9,7 @@ next:
   version: v6.0.0
   city: Sydney
   date: 2019-01-14
-  location: CommBank, TBA
+  location: /_locations/commbank.md
   sponsors:
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
