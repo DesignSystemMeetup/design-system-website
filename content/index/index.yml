@@ -5,34 +5,34 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v6.0.0
-  version: v6.0.0
+  pagetitle: Design System meetup Sydney v7.0.0
+  version: v7.0.0
   city: Sydney
-  date: 2019-01-14
-  location: /_locations/commbank.md
+  date: 2019-03-11
+  location: null
   sponsors:
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/257951103
+  # link: https://www.meetup.com/Design-System/events/257951103
   eventdescription: |
-    Design System meetup Sydney v6.0.0 is up.
+    Design System meetup Sydney v7.0.0 is up.
 
-  speakers:
-    - time: "5:30"
-      title: Open doors
-    - time: "6:15"
-      name: Ben Conolly
-      description: |
-        A design system that nobody can understand is a design system nobody can use. This is why good documentation is so key to having a well-used and
-        well-loved design system. I will walk you through two of Atlassian's documentation sites for the company-wide design system & component library
-        Atlaskit, showing how the content is built and written, and the practical steps you can take immediately to tackle the hard problems around
-        large documentation projects.
-    - time: "7:00"
-      name: Ciro Nunes
-      title: What I’ve learned building automated documentation for Ansarada’s design system
-      description: |
-        That’s right. We are building automated docs for our design system, but that’s not the best part. It will work with any React project. In this talk I’m
-        gonna share with you what I’ve learned in the process and show you how we built it (for the techies)
+  # speakers:
+  #   - time: "5:30"
+  #     title: Open doors
+  #   - time: "6:15"
+  #     name: Ben Conolly
+  #     description: |
+  #       A design system that nobody can understand is a design system nobody can use. This is why good documentation is so key to having a well-used and
+  #       well-loved design system. I will walk you through two of Atlassian's documentation sites for the company-wide design system & component library
+  #       Atlaskit, showing how the content is built and written, and the practical steps you can take immediately to tackle the hard problems around
+  #       large documentation projects.
+  #   - time: "7:00"
+  #     name: Ciro Nunes
+  #     title: What I’ve learned building automated documentation for Ansarada’s design system
+  #     description: |
+  #       That’s right. We are building automated docs for our design system, but that’s not the best part. It will work with any React project. In this talk I’m
+  #       gonna share with you what I’ve learned in the process and show you how we built it (for the techies)
 
 footer:
   - /_shared/footer.md
