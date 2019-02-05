@@ -25,16 +25,19 @@ next:
   eventdescription: |
     Design System meetup Sydney v7.0.0 is up.
 
-  # speakers:
-  #   - time: "5:30"
-  #     title: Open doors
-  #   - time: "6:15"
-  #     name: Ben Conolly
-  #     description: |
-  #       A design system that nobody can understand is a design system nobody can use. This is why good documentation is so key to having a well-used and
-  #       well-loved design system. I will walk you through two of Atlassian's documentation sites for the company-wide design system & component library
-  #       Atlaskit, showing how the content is built and written, and the practical steps you can take immediately to tackle the hard problems around
-  #       large documentation projects.
+  speakers:
+    - time: "5:30"
+      title: Open doors
+    - time: "6:15"
+      name: Rozario Chivers
+      description: |
+        Rozario has dedicated 20+ years of his career to following inspirational evangelists of Web Standards (Patrick Griffiths), Microformats (Tantek Çelik),
+        CSS Systems (Natalie Downe), Pattern Portfolios (Anna Debenham) and now Design Systems (Brad Frost).
+
+        After delivering many high traffic, multi-tenanted Web sites and encountering the problems of Design at Scale he developed a number of unique strategies
+        to overcome common problems.
+
+        Rozario now Design's Design Systems with empirical evidence, enthusiastic engineering and a little humour via edutainment in the form of Code Comics.
   #   - time: "7:00"
   #     name: Ciro Nunes
   #     title: What I’ve learned building automated documentation for Ansarada’s design system
