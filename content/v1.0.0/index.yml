@@ -29,13 +29,13 @@ speakers:
     description: |
       What does it look like to build and maintain a design system at a small, fast-moving company with limited time, budget and resources?
       Spoiler alert: it’s nothing like what's going on at Airbnb!
-    video: t1_tA2CqcMw
+    youtube: t1_tA2CqcMw
   - time: "5:45"
     name: Gary Broadbent
     title: Tips on selling a design system to management.
     description: |
       Our learnings on driving adoption to 3,000+ practitioners.
-    video: F_9BR74EkTg
+    youtube: F_9BR74EkTg
   - time: "6:00"
     name: Sarah Pulis
     title: To quote Cordelia McGee-Tubb, “Accessibility is like a blueberry muffin—you can't push the berries in there afterward”.
@@ -56,6 +56,6 @@ speakers:
       The Australian federal government has more than 1000 inconsistent websites and a workforce spread out across 200+ organisations.
       Alex (Developer) and Trevor (Designer) share how they have come together in an attempt to provide a common language for typography, spacing alignment,
       and an accessible colour contrast system, at a scale suitable for a nation.
-    video: ol9t-ERYqFM
+    youtube: ol9t-ERYqFM
 
 footer: /_shared/footer.md

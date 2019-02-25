@@ -20,6 +20,7 @@ speakers:
     title: Open doors
   - time: "6:15"
     name: Ben Conolly
+    vimeo: 318677878
     description: |
       A design system that nobody can understand is a design system nobody can use. This is why good documentation is so key to having a well-used and
       well-loved design system. I will walk you through two of Atlassian's documentation sites for the company-wide design system & component library
@@ -28,6 +29,7 @@ speakers:
   - time: "7:00"
     name: Ciro Nunes
     title: What I’ve learned building automated documentation for Ansarada’s design system
+    vimeo: 318677902
     description: |
       That’s right. We are building automated docs for our design system, but that’s not the best part. It will work with any React project. In this talk I’m
       gonna share with you what I’ve learned in the process and show you how we built it (for the techies)

@@ -13,8 +13,9 @@ next:
   # date: 2019-07-8  # 9.0.0
   # date: 2019-09-9  # 10.0.0
   # date: 2019-11-11 # 11.0.0
-  location: null
+  location: /_locations/hipages.md
   sponsors:
+    - /_sponsors/hipages.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
   link: https://www.meetup.com/Design-System/events/258516904
@@ -30,20 +31,21 @@ next:
       title: Open doors
     - time: "6:15"
       name: Rozario Chivers
+      title: Design Systems The Missing Manual
       description: |
-        Rozario has dedicated 20+ years of his career to following inspirational evangelists of Web Standards (Patrick Griffiths), Microformats (Tantek Çelik),
-        CSS Systems (Natalie Downe), Pattern Portfolios (Anna Debenham) and now Design Systems (Brad Frost).
+        This talk focuses on the missing considerations of Continuous Improvement and Innovation within a Design System.
 
-        After delivering many high traffic, multi-tenanted Web sites and encountering the problems of Design at Scale he developed a number of unique strategies
-        to overcome common problems.
-
-        Rozario now Design's Design Systems with empirical evidence, enthusiastic engineering and a little humour via edutainment in the form of Code Comics.
-  #   - time: "7:00"
-  #     name: Ciro Nunes
-  #     title: What I’ve learned building automated documentation for Ansarada’s design system
-  #     description: |
-  #       That’s right. We are building automated docs for our design system, but that’s not the best part. It will work with any React project. In this talk I’m
-  #       gonna share with you what I’ve learned in the process and show you how we built it (for the techies)
+        We work hard to optimise our processes in order to build better user centred products. Instead let's try looking at the people helping to build our
+        Design Systems first by "measuring people to measure the process".
+    - time: "7:00"
+      name: Alex Skougarevskaya
+      title: 5 things our users wanted from the Atlassian Design System
+      description: |
+        Getting buy-in and building a design system is one thing, but validating that it is successful, understanding if it’s meeting the users’ needs and is
+        actually helping them build better products is a whole new kettle of fish. After running Atlassian’s Design System team for 3 years, Alex
+        Skougarevskaya, will share with you insights, tips and challenges that the team has faced and what they plan to do to overcome them. You will
+        walk way with ideas and tips on how you ensure the design system you have built (or thinking about building) will not only be used but loved by
+        it’s consumers.
 
 footer:
   - /_shared/footer.md

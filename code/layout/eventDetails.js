@@ -50,13 +50,35 @@ const EventDetails = ({
 										{ speaker.title && <h2 className="heading-small heading--shade" itemProp="name">{ speaker.title }</h2> }
 										{ speaker.description && <div className="schedule-desc">{ _parseMD( speaker.description ) }</div> }
 										{
-											speaker.video &&
+											speaker.youtube &&
 												<div className="video-container">
-													<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.video }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
-														<a href={ speaker.video }>
+													<iframe width="560" height="315" src={ `https://www.youtube.com/embed/${ speaker.youtube }` } frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
+														<a href={ speaker.youtube }>
 															Watch video
 														</a>
 													</iframe>
+												</div>
+										}
+										{
+											speaker.vimeo &&
+												<div className="video-container">
+													<iframe
+														width="560"
+														height="315"
+														src={`https://player.vimeo.com/video/${ speaker.vimeo }?byline=0`}
+														style={{
+															position: 'absolute',
+															top: 0,
+															left: 0,
+															width: '100%',
+															height: '100%',
+														}}
+														frameBorder="0"
+														allowFullScreen
+													>
+														<a href={`https://vimeo.com/${ speaker.vimeo }`}>Watch video</a>
+													</iframe>
+													<script src="https://player.vimeo.com/api/player.js"/>
 												</div>
 										}
 									</li>

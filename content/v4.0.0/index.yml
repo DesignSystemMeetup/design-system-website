@@ -29,7 +29,7 @@ speakers:
       Sarah Karp, a Content Design Manager at Atlassian, shares what goes on behind the scenes of a product terminology decision.
       In this talk, you’ll learn how to validate a terminology choice, get buy-in from stakeholders, and streamline naming decisions into a process that can be
       shared across entire organisations.
-    video: YKMvxMqABIk
+    youtube: YKMvxMqABIk
   - time: "6:45"
     name: Alex Page
     title: Names and positive culture
@@ -40,7 +40,7 @@ speakers:
       When building a design system we have to name a lot of things.
       Some times the names we give should be functional and understandable and other times there are opportunities
       to be creative and create a positive culture.
-    video: -xAKir02gto
+    youtube: -xAKir02gto
   - time: "7:15"
     name: Ben Buchanan
     title: The Naming of Things
@@ -51,6 +51,6 @@ speakers:
       How do you define components in a way all stakeholders can understand?
       How do you set APIs that will last?
       It all starts with naming things.
-    video: cEbSa9uglA8
+    youtube: cEbSa9uglA8
 
 footer: /_shared/footer.md
