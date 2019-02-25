@@ -65,7 +65,7 @@ const EventDetails = ({
 													<iframe
 														width="560"
 														height="315"
-														src={`https://player.vimeo.com/video/${ speaker.vimeo }?byline=0`}
+														src={`https://player.vimeo.com/video/${ speaker.vimeo }`}
 														style={{
 															position: 'absolute',
 															top: 0,
