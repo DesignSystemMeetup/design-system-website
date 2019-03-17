@@ -111,7 +111,8 @@ const EventDetails = ({
 
 								<p>
 									Get in contact with us if you'd like to talk at our next meetup.<br/>
-									Send us a message at <a href="mailto:talks@designsystemmeetup.com">talks@designsystemmeetup.com</a>.
+									Send us a message at <a href="mailto:talks@designsystemmeetup.com">talks@designsystemmeetup.com</a> or
+									submit a talk proposal to <a href="https://beta.cete.io/designsystemmeetup" rel="external" target="_blank">cete.io</a>.
 								</p>
 							</li>
 						</ul>

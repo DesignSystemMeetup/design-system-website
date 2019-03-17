@@ -1,0 +1,40 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v7.0.0
+version: v7.0.0
+city: Sydney
+date: 2019-03-11
+location: /_locations/hipages.md
+sponsors:
+  - /_sponsors/hipages.md
+  - /_sponsors/thinkmill.md
+  - /_sponsors/tomwalker.md
+link: https://www.meetup.com/Design-System/events/258516904
+eventdescription: |
+  Design System meetup Sydney v7.0.0 is up.
+
+speakers:
+  - time: "5:30"
+    title: Open doors
+  - time: "6:15"
+    name: Rozario Chivers
+    title: Design Systems The Missing Manual
+    description: |
+      This talk focuses on the missing considerations of Continuous Improvement and Innovation within a Design System.
+
+      We work hard to optimise our processes in order to build better user centred products. Instead let's try looking at the people helping to build our
+      Design Systems first by "measuring people to measure the process".
+  - time: "7:00"
+    name: Alex Skougarevskaya
+    title: 5 things our users want from the Atlassian Design System
+    description: |
+      Getting buy-in and building a design system is one thing, but validating that it is successful, understanding if it’s meeting the users’ needs and is
+      actually helping them build better products is a whole new kettle of fish. After running Atlassian’s Design System team for 3 years, Alex
+      Skougarevskaya, will share with you insights, tips and challenges that the team has faced and what they plan to do to overcome them. You will
+      walk way with ideas and tips on how you ensure the design system you have built (or thinking about building) will not only be used but loved by
+      it’s consumers.
+
+footer: /_shared/footer.md
