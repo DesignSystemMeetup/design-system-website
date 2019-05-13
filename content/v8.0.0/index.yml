@@ -7,12 +7,11 @@ pagetitle: Design System meetup Sydney v8.0.0
 version: v8.0.0
 city: Sydney
 date: 2019-05-13
-location: /_locations/hipages.md
+location: /_locations/canva.md
 sponsors:
   - /_sponsors/canva.md
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
-link: https://www.meetup.com/Design-System/events/258516904
 eventdescription: |
   Design System meetup Sydney v8.0.0 is up.
 
