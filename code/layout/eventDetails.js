@@ -4,7 +4,6 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
-import Moment from 'moment';
 
 /**
  * The Event detail component
