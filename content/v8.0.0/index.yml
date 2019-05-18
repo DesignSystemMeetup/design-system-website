@@ -1,0 +1,35 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v8.0.0
+version: v8.0.0
+city: Sydney
+date: 2019-05-13
+location: /_locations/canva.md
+sponsors:
+  - /_sponsors/canva.md
+  - /_sponsors/thinkmill.md
+  - /_sponsors/tomwalker.md
+image: v8.jpg
+eventdescription: |
+  Design System meetup Sydney v8.0.0.
+  Two 30min talks about Canvas design system, how it grew rapidly and 5 things that helped Canvas design system by Matt Anderson and Joscha Feth.
+
+speakers:
+  - time: "5:30"
+    title: Open doors
+  - time: "6:15"
+    name: Matt Anderson
+    title: Little of what makes up a design system is design
+    description: |
+      Building a successful design system involves more than just design. With a company that’s rapidly outgrowing our design system resources, we’ve had to
+      think creatively about how to gain adoption for the system.
+  - time: "7:00"
+    name: Joscha Feth
+    title: "Kickstart your design system: 5 things you can do"
+    description: |
+      These are the 5 things that helped Canva create a stable design system and made it scale.
+
+footer: /_shared/footer.md
