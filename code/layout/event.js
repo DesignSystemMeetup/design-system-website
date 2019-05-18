@@ -3,7 +3,6 @@ import EventDetails from './eventDetails.js';
 import PropTypes from 'prop-types';
 import Scripts from './scripts.js';
 import Head from './head.js';
-import Moment from 'moment';
 import React from 'react';
 
 /**
