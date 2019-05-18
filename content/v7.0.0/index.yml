@@ -13,8 +13,11 @@ sponsors:
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
 link: https://www.meetup.com/Design-System/events/258516904
+image: v7.jpg
 eventdescription: |
-  Design System meetup Sydney v7.0.0 is up.
+  Design System meetup Sydney v7.0.0.
+  Two 30min talks about Continuous Improvement of your design system and validating the success of Atlassians design system by Rozario Chivers and Alex
+  Skougarevskaya.
 
 speakers:
   - time: "5:30"

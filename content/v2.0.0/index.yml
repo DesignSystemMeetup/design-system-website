@@ -12,10 +12,11 @@ sponsors:
   - /_sponsors/atlassian.md
   - /_sponsors/thinkmill.md
 link: https://www.meetup.com/Design-System/events/249412634/
+image: v2.jpg
 eventdescription: |
-  Our second Design System meetup v2.0.0 is up.
-  Come and join us for a panel centered around the topic:
-  Challenges of scaling design systems.
+  Our second Design System meetup v2.0.0.
+  A panel discussion centered around the topic "Challenges of scaling design systems" with Sarah Federman, Petra Gulicher, Russ Weakley, Alex Skougarevskaya,
+  Desiree Conceicao moderated by Dominik Wilkowski.
 
 speakers:
   - time: "5:45"

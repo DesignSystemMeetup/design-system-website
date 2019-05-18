@@ -12,8 +12,10 @@ sponsors:
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
 link: https://www.meetup.com/Design-System/events/257951103
+image: v6.jpg
 eventdescription: |
-  Design System meetup Sydney v6.0.0 is up.
+  Design System meetup Sydney v6.0.0.
+  Two 30min talks about documentation and it's tools by Ben Conolly and Ciro Nunes.
 
 speakers:
   - time: "5:30"

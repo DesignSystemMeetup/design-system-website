@@ -13,8 +13,11 @@ sponsors:
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
 link: https://www.meetup.com/Design-System/events/254605914
+image: v5.jpg
 eventdescription: |
-  Design System meetup Sydney v5.0.0 is up.
+  Design System meetup Sydney v5.0.0.
+  Three 30min talks about the product management side of design systems, what Atlassian has learned about their design system and design systems for immersive
+  computing (AR, VR, and new ambient surfaces) by Charlotte Jackson, Tom Butler and Sam Keene.
 
 speakers:
 - time: "5:30"
