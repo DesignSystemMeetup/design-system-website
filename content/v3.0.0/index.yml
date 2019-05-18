@@ -13,9 +13,11 @@ sponsors:
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
 link: https://www.meetup.com/Design-System/events/251001539/
+image: v3.jpg
 eventdescription: |
-  Design System meetup Sydney v3.0.0 is up.
-  Come and join us for three 30min talks
+  Design System meetup Sydney v3.0.0.
+  Three 30min talks about refreshing design systems, scaling the proof of concept and CSS-in-Js in design systems by James Bryant, Magda Bytnerowicz and
+  Matthew Sutton.
 
 speakers:
   - time: "5:30"

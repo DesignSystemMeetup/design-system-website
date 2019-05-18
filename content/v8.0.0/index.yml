@@ -12,8 +12,10 @@ sponsors:
   - /_sponsors/canva.md
   - /_sponsors/thinkmill.md
   - /_sponsors/tomwalker.md
+image: v8.jpg
 eventdescription: |
-  Design System meetup Sydney v8.0.0 is up.
+  Design System meetup Sydney v8.0.0.
+  Two 30min talks about Canvas design system, how it grew rapidly and 5 things that helped Canvas design system by Matt Anderson and Joscha Feth.
 
 speakers:
   - time: "5:30"

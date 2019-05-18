@@ -19,8 +19,9 @@ next:
   link: https://www.meetup.com/Design-System/events/258516927/ # 9.0.0
   # link: https://www.meetup.com/Design-System/events/258516938/ # 10.0.0
   # link: https://www.meetup.com/Design-System/events/258516948/ # 11.0.0
+  # image: v9.jpg
   eventdescription: |
-    Design System meetup Sydney v9.0.0 is up.
+    Design System meetup Sydney v9.0.0.
 
   speakers:
     # - time: "5:30"

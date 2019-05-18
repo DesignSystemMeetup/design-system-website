@@ -15,6 +15,7 @@ const Event = ({
 	pagetitle,
 	version,
 	city,
+	image,
 	eventdescription,
 	date,
 	location,
@@ -25,7 +26,7 @@ const Event = ({
 	footer
 }) => (
 	<html>
-		<Head _ID={ _ID } pagetitle={ pagetitle }/>
+		<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={ eventdescription } image={ image }/>
 
 		<body className="eventpage">
 			<div className="wrapper">

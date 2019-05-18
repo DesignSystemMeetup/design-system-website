@@ -8,7 +8,7 @@ import React from 'react';
  *
  * @disable-docs
  */
-const Head = ({ _ID, pagetitle }) => (
+const Head = ({ _ID, pagetitle, eventdescription, image = 'og-image.jpg' }) => (
 	<head>
 		<title>{ pagetitle ? pagetitle : 'Design System meetup' }</title>
 
@@ -30,16 +30,16 @@ const Head = ({ _ID, pagetitle }) => (
 		<meta property="og:image:width" content="2400"/>
 		<meta property="og:site_name" content="Design System Meetup Sydney"/>
 		<meta property="og:title" content="Design System Meetup"/>
-		<meta property="og:description" content="Join us for all things Design System. From solving issues in multi platform environments to how we name things this is where we share what we've learned building large and small scale design systems. We meet every second Monday of every second month."/>
+		<meta property="og:description" content={ eventdescription }/>
 		<meta property="og:url" content="https://designsystemmeetup.com/"/>
-		<meta property="og:image" content="https://designsystemmeetup.com/assets/img/og-image.jpg"/>
+		<meta property="og:image" content={`https://designsystemmeetup.com/assets/img/${ image }`}/>
 		<meta property="og:image:height" content="1257"/>
 		<meta property="og:image:width" content="2400"/>
 		<meta name="twitter:card" content="summary_large_image"/>
 		<meta name="twitter:title" content="Design System Meetup Sydney"/>
-		<meta name="twitter:description" content="Join us for all things Design System. From solving issues in multi platform environments to how we name things this is where we share what we've learned building large and small scale design systems. We meet every second Monday of every second month."/>
+		<meta name="twitter:description" content={ eventdescription }/>
 		<meta name="twitter:name" content="Design System Meetup Sydney"/>
-		<meta name="twitter:image" content="https://designsystemmeetup.com/assets/img/og-image.jpg"/>
+		<meta name="twitter:image" content={`https://designsystemmeetup.com/assets/img/${ image }`}/>
 		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet"/>
 		<link rel="stylesheet" href={ RelativeURL(`/assets/css/site.min.css`, _ID) }/>
 	</head>
