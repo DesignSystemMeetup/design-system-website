@@ -28,7 +28,7 @@ const Homepage = ({
 
 	return (
 		<html>
-			<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={`Join us for all things Design System. We meet every second Monday of every second month. ${ next.eventdescription }`}/>
+			<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={`Join us for all things Design System. From solving issues in multi platform environments to how we name things this is where we share what we've learned building large and small scale design systems. We meet every second Monday of every second month. ${ next.eventdescription }`}/>
 
 			<body className="homepage">
 				<div className="wrapper">
