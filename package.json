@@ -24,11 +24,11 @@
 		}
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.5.0",
-		"browser-sync": "^2.26.3",
+		"autoprefixer": "^9.5.1",
+		"browser-sync": "^2.26.5",
 		"cssnano": "^4.1.10",
 		"moment": "^2.24.0",
-		"onchange": "^5.2.0",
+		"onchange": "^6.0.0",
 		"postcss-cli": "^6.1.2"
 	}
 }
