@@ -42,7 +42,7 @@ next:
         A Design Systems code base is great for developers to consume, but designers are limited to downloading a SketchApp stencil or to use a plugin like
         Google’s [Material Theming](https://material.io/design/material-theming/#material-theming). What if designers could design with the same code
         components? Well now you can! Join Lincoln as he demonstrates how [Google Materials](https://material.io/) can be used within
-        [Framer X](http://www.framer.com/) via [React Material Web Components](https://rmwc.io/). A signal source of truth is finally possible!
+        [Framer X](http://www.framer.com/) via [React Material Web Components](https://rmwc.io/). A single source of truth is finally possible!
 
 footer:
   - /_shared/footer.md
