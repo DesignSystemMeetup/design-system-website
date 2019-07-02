@@ -9,11 +9,12 @@
 		"watch:css": "onchange 'code/css/*.css' -- npm run build:css",
 		"watch:site": "onchange 'code/**' 'content/**' -- npm run build:pages",
 		"watch": "npm run build && npm run watch:css | npm run watch:site | npm run server",
-		"server": "browser-sync start --server 'docs' --files 'docs'"
+		"server": "browser-sync start --server 'docs' --files 'docs'",
+		"nuke": "rm -rf docs && rm -rf node_modules && rm yarn.lock"
 	},
 	"dependencies": {
 		"babel-minify": "^0.5.0",
-		"cuttlebelle": "^1.0.0-alpha.62"
+		"cuttlebelle": "latest"
 	},
 	"cuttlebelle": {
 		"folder": {
