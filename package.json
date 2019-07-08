@@ -25,8 +25,8 @@
 		}
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.5.1",
-		"browser-sync": "^2.26.5",
+		"autoprefixer": "^9.6.1",
+		"browser-sync": "^2.26.7",
 		"cssnano": "^4.1.10",
 		"moment": "^2.24.0",
 		"onchange": "^6.0.0",
