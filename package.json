@@ -30,6 +30,6 @@
 		"cssnano": "^4.1.10",
 		"moment": "^2.24.0",
 		"onchange": "^6.0.0",
-		"postcss-cli": "^6.1.2"
+		"postcss-cli": "^6.1.3"
 	}
 }
