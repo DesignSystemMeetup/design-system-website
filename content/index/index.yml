@@ -12,6 +12,7 @@ next:
   # date: 2019-11-11 # 11.0.0
   location: /_locations/atlassian-new.md
   sponsors:
+    - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
   link: https://www.meetup.com/Design-System/events/258516938/ # 10.0.0
@@ -21,25 +22,29 @@ next:
     Design System meetup Sydney v10.0.0 is coming up next.
 
   speakers:
-    # - time: "5:30"
-    #   title: Open doors
-    # - time: "6:15"
-    #   name: Jake Miller
-    #   twitter: '@pwnies'
-    #   title: Building Tools To Lower Friction.
-    #   description: |
-    #     A design system is only good if it's used consistently, and great tooling can get you there. Join as Jake Miller goes over how Atlassian made a small
-    #     investment into tooling which lead to a huge jump in adoption and consistency of Atlassian's design system, and saved every designer time in the
-    #     process.
-    # - time: "7:00"
-    #   name: Lincoln Mitchell
-    #   twitter: '@Lincolnmitchel6'
-    #   title: Using a Design System in Framer X
-    #   description: |
-    #     A Design Systems code base is great for developers to consume, but designers are limited to downloading a SketchApp stencil or to use a plugin like
-    #     Google’s [Material Theming](https://material.io/design/material-theming/#material-theming). What if designers could design with the same code
-    #     components? Well now you can! Join Lincoln as he demonstrates how [Google Materials](https://material.io/) can be used within
-    #     [Framer X](http://www.framer.com/) via [React Material Web Components](https://rmwc.io/). A single source of truth is finally possible!
+    - time: "5:30"
+      title: Open doors
+    - time: "6:15"
+      name: Jack Lo Russo
+      twitter: '@lol_russo'
+      title: TODO
+      description: |
+        TODO
+    - time: "7:00"
+      name: Panel discussion
+      title: What does it mean to be a hybrid designer/engineer?
+      description: |
+        _On the panel will be_
+
+        Jannie Yip
+
+        Sarah Federman
+
+        Jack Lo Russo
+
+        Dominik Wilkowski
+
+        Alex Skougarevskaya to MC
 
 footer:
   - /_shared/footer.md
