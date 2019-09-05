@@ -27,24 +27,25 @@ next:
     - time: "6:15"
       name: Jack Lo Russo
       twitter: '@lol_russo'
-      title: TODO
+      title: "A Foot in Both Camps: Navigating a Career as a Design/Dev Hybrid"
       description: |
-        TODO
+        It’s not easy when your skills don’t fit cleanly in a neat and tidy box.
+        Are you a designer or developer?
+        Does it matter?
+        Should it matter?
     - time: "7:00"
       name: Panel discussion
       title: What does it mean to be a hybrid designer/engineer?
       description: |
         _On the panel will be_
 
-        Jannie Yip
+        Jennie S. Yip
 
         Sarah Federman
 
         Jack Lo Russo
 
-        Dominik Wilkowski
-
-        Alex Skougarevskaya to MC
+        *Alex Skougarevskaya to MC*
 
 footer:
   - /_shared/footer.md
