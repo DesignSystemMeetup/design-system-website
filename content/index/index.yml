@@ -5,49 +5,46 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v10.0.0
-  version: v10.0.0
+  pagetitle: Design System meetup Sydney v11.0.0
+  version: v11.0.0
   city: Sydney
-  date: 2019-09-09  # 10.0.0
-  # date: 2019-11-11 # 11.0.0
+  date: 2019-11-11 # 11.0.0
   location: /_locations/atlassian-new.md
   sponsors:
-    - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/258516938/ # 10.0.0
-  # link: https://www.meetup.com/Design-System/events/258516948/ # 11.0.0
-  # image: v10.jpg
+  link: https://www.meetup.com/Design-System/events/258516948/ # 11.0.0
+  # image: v11.jpg
   eventdescription: |
-    Design System meetup Sydney v10.0.0 is coming up next.
+    Design System meetup Sydney v11.0.0 is coming up next.
 
   speakers:
-    - time: "5:30"
-      title: Open doors
-    - time: "6:15"
-      name: Jack Lo Russo
-      twitter: '@lol_russo'
-      title: "A Foot in Both Camps: Navigating a Career as a Design/Dev Hybrid"
-      description: |
-        It’s not easy when your skills don’t fit cleanly in a neat and tidy box.
-        Are you a designer or developer?
-        Does it matter?
-        Should it matter?
-    - time: "6:40"
-      title: Food break
-    - time: "7:00"
-      name: Panel discussion
-      title: What does it mean to be a hybrid designer/engineer?
-      description: |
-        _On the panel will be_
+    # - time: "5:30"
+    #   title: Open doors
+    # - time: "6:15"
+    #   name: Jack Lo Russo
+    #   twitter: '@lol_russo'
+    #   title: "A Foot in Both Camps: Navigating a Career as a Design/Dev Hybrid"
+    #   description: |
+    #     It’s not easy when your skills don’t fit cleanly in a neat and tidy box.
+    #     Are you a designer or developer?
+    #     Does it matter?
+    #     Should it matter?
+    # - time: "6:40"
+    #   title: Food break
+    # - time: "7:00"
+    #   name: Panel discussion
+    #   title: What does it mean to be a hybrid designer/engineer?
+    #   description: |
+    #     _On the panel will be_
 
-        Jennie S. Yip
+    #     Jennie S. Yip
 
-        Sarah Federman
+    #     Sarah Federman
 
-        Jack Lo Russo
+    #     Jack Lo Russo
 
-        *Alex Skougarevskaya to MC*
+    #     *Alex Skougarevskaya to MC*
 
 footer:
   - /_shared/footer.md
