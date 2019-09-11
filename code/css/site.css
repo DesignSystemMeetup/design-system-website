@@ -127,13 +127,13 @@ a:hover {
 	width: 4.3rem;
 	text-align: right;
 	line-height: 1.1;
-	top: 0.55rem;
+	top: 0.95rem;
 }
 
 .page h1,
 .eventsHeadline-title {
 	font-family: 'Maven Pro', sans-serif;
-	font-size: 2.4rem;
+	font-size: 3rem;
 	font-weight: 700;
 	color: #fff;
 	margin-left: -0.1rem;
@@ -165,7 +165,7 @@ a:hover {
 	}
 
 	.eventsHeadline-fontstack {
-		top: 1.8rem;
+		top: 2.2rem;
 	}
 
 	.homepage .eventsHeadline .innerWrapper-right {
@@ -436,7 +436,8 @@ footer svg {
 
 .pastSchedule .eventsHeadline-title {
 	margin-top: 0;
-	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+	font-size: 2rem;
 }
 
 .pastSchedule-item {

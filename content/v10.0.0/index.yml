@@ -17,7 +17,9 @@ link: https://www.meetup.com/Design-System/events/258516938/ # 10.0.0
 # link: https://www.meetup.com/Design-System/events/258516948/ # 11.0.0
 image: v10.jpg
 eventdescription: |
-  Design System meetup Sydney v10.0.0 is coming up next.
+  Design System meetup Sydney v10.0.0.
+  The theme was the design/developer hybrid.
+  One talk by Jack Lo Russo and a panel discussion with Jennie S. Yip, Sarah Federman, Jack Lo Russo. MCd by Alex Skougarevskaya
 
 speakers:
   - time: "5:30"
