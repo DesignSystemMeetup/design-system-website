@@ -5,38 +5,38 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v11.0.0
-  version: v11.0.0
+  pagetitle: Design System meetup Sydney v12.0.0
+  version: v12.0.0
   city: Sydney
-  date: 2019-11-11
-  location: /_locations/microsoft.md
+  # date: 2019-11-11
+  # location: /_locations/microsoft.md
   sponsors:
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/258516948/
-  # image: v11.jpg
+  # link: https://www.meetup.com/Design-System/events/258516948/
+  # image: v12.jpg
   eventdescription: |
-    Design System meetup Sydney v11.0.0 is coming up next.
+    Design System meetup Sydney v12.0.0 is coming up next.
 
   speakers:
-    - time: "5:30"
-      title: Open doors
-    - time: "6:15"
-      name: Russ Weakley
-      twitter: '@russmaxdesign'
-      title: "Accessible states in Design Systems"
-      description: |
-        This talk will look at a the importance of states (visited, focus, active, checked/selected, open and more) when building design systems.
-        We will explore their relevance, how to maintain consistency and how to systemise when designing at scale.
-    - time: "6:40"
-      title: Food break
-    - time: "7:00"
-      name: Dominik Wilkowski
-      twitter: '@wilkowskidom'
-      title: "Lifting your Design Systems by focusing on a11y"
-      description: |
-        Come and see some examples I found for awesome a11y things inside design systems. This is meant to be an inspiration for you to do even more awesome
-        things in your own design system.
+    # - time: "5:30"
+    #   title: Open doors
+    # - time: "6:15"
+    #   name: Russ Weakley
+    #   twitter: '@russmaxdesign'
+    #   title: "Accessible states in Design Systems"
+    #   description: |
+    #     This talk will look at a the importance of states (visited, focus, active, checked/selected, open and more) when building design systems.
+    #     We will explore their relevance, how to maintain consistency and how to systemise when designing at scale.
+    # - time: "6:40"
+    #   title: Food break
+    # - time: "7:00"
+    #   name: Dominik Wilkowski
+    #   twitter: '@wilkowskidom'
+    #   title: "Lifting your Design Systems by focusing on a11y"
+    #   description: |
+    #     Come and see some examples I found for awesome a11y things inside design systems. This is meant to be an inspiration for you to do even more awesome
+    #     things in your own design system.
 
 footer:
   - /_shared/footer.md
