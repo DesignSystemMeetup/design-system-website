@@ -35,7 +35,8 @@ next:
       twitter: '@wilkowskidom'
       title: "Lifting your Design Systems by focusing on a11y"
       description: |
-        TBC
+        Come and see some examples I found for awesome a11y things inside design systems. This is meant to be an inspiration for you to do even more awesome
+        things in your own design system.
 
 footer:
   - /_shared/footer.md
