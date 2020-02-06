@@ -14,8 +14,9 @@ next:
   # date: 2020-08-7 # v15
   # date: 2020-10-12 # v16
   # date: 2020-12-14 # v17
-  # location: /_locations/microsoft.md
+  location: /_locations/atlassian-new.md
   sponsors:
+    - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
   link: https://www.meetup.com/Design-System/events/266748783/ # v12
@@ -24,33 +25,36 @@ next:
   # link: https://www.meetup.com/Design-System/events/266748845/ # v15
   # link: https://www.meetup.com/Design-System/events/266748872/ # v16
   # link: https://www.meetup.com/Design-System/events/266748883/ # v17
+  # image: v12.jpg
   # image: v13.jpg
   # image: v14.jpg
   # image: v15.jpg
   # image: v16.jpg
   # image: v17.jpg
   eventdescription: |
-    Design System meetup Sydney v12.0.0 is coming up next.
+    Design System meetup Sydney v12.0.0 and [Sydney Content Strategy](https://www.sydneycontentstrategy.com/) meetup is teaming up.
 
   speakers:
-    # - time: "5:30"
-    #   title: Open doors
-    # - time: "6:15"
-    #   name: Russ Weakley
-    #   twitter: '@russmaxdesign'
-    #   title: "Accessible states in Design Systems"
-    #   description: |
-    #     This talk will look at a the importance of states (visited, focus, active, checked/selected, open and more) when building design systems.
-    #     We will explore their relevance, how to maintain consistency and how to systemise when designing at scale.
-    # - time: "6:40"
-    #   title: Food break
-    # - time: "7:00"
-    #   name: Dominik Wilkowski
-    #   twitter: '@wilkowskidom'
-    #   title: "Lifting your Design Systems by focusing on a11y"
-    #   description: |
-    #     Come and see some examples I found for awesome a11y things inside design systems. This is meant to be an inspiration for you to do even more awesome
-    #     things in your own design system.
+    - time: "6:00"
+      title: Open doors
+    - time: "6:15"
+      title: Elle and Dom intro
+    - time: "6:30"
+      name: Anthony Starr
+      twitter: '@Tony_Starr'
+      title: "Strive for 73% content in your design system"
+      description: |
+        Learn how we built the Atlassian Design System on sheer grit, sweat, and determination. Thrill at how we glued it all together with a lot of
+        user-centered content. Marvel when you see where we are, how we got there, where we are going - and how content is and was, leading this initiative.
+    - time: "7:00"
+      title: Food break
+    - time: "7:20"
+      name: Steven Berends
+      twitter: '@fearlessssteven'
+      title: "Spooning: agile content and design systems"
+      description: |
+        My talk is about evolving content alongside design systems.
+        I’m the boss of my own company BEAR LION BIRD, currently on assignment at the Australian Trade and Investment Commission.
 
 footer:
   - /_shared/footer.md
