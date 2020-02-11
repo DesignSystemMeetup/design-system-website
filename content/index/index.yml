@@ -5,56 +5,49 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v12.0.0
-  version: v12.0.0
+  pagetitle: Design System meetup Sydney v13.0.0
+  version: v13.0.0
   city: Sydney
-  date: 2020-02-10 # v12
-  # date: 2020-04-13 # v13
+  date: 2020-04-13 # v13
   # date: 2020-06-8 # v14
   # date: 2020-08-7 # v15
   # date: 2020-10-12 # v16
   # date: 2020-12-14 # v17
-  location: /_locations/atlassian-new.md
+  # location: /_locations/atlassian-new.md
   sponsors:
-    - /_sponsors/atlassian.md
+    # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/266748783/ # v12
-  # link: https://www.meetup.com/Design-System/events/266748797/ # v13
+  link: https://www.meetup.com/Design-System/events/266748797/ # v13
   # link: https://www.meetup.com/Design-System/events/266748816/ # v14
   # link: https://www.meetup.com/Design-System/events/266748845/ # v15
   # link: https://www.meetup.com/Design-System/events/266748872/ # v16
   # link: https://www.meetup.com/Design-System/events/266748883/ # v17
-  # image: v12.jpg
   # image: v13.jpg
   # image: v14.jpg
   # image: v15.jpg
   # image: v16.jpg
   # image: v17.jpg
   eventdescription: |
-    Design System meetup Sydney v12.0.0 and [Sydney Content Strategy](https://www.sydneycontentstrategy.com/) meetup is teaming up.
+    Design System meetup Sydney v13.0.0 and [Sydney Content Strategy](https://www.sydneycontentstrategy.com/) meetup is teaming up.
 
-  speakers:
-    - time: "6:00"
-      title: Open doors
-    - time: "6:15"
-      title: Elle and Dom intro
-    - time: "6:30"
-      name: Anthony Starr
-      twitter: '@Tony_Starr'
-      title: "Strive for 73% content in your design system"
-      description: |
-        Learn how we built the Atlassian Design System on sheer grit, sweat, and determination. Thrill at how we glued it all together with a lot of
-        user-centered content. Marvel when you see where we are, how we got there, where we are going - and how content is and was, leading this initiative.
-    - time: "7:00"
-      title: Food break
-    - time: "7:20"
-      name: Steven Berends
-      twitter: '@fearlessssteven'
-      title: "Spooning: agile content and design systems"
-      description: |
-        My talk is about evolving content alongside government design systems.
-        I’m the boss of my own company BEAR LION BIRD, currently on assignment at the Australian Trade and Investment Commission.
+  # speakers:
+  #   - time: "5:30"
+  #     title: Open doors
+  #   - time: "6:00"
+  #     name: TODO
+  #     twitter: '@TODO'
+  #     title: TODO
+  #     description: |
+  #       TODO
+  #   - time: "6:40"
+  #     title: Food break
+  #   - time: "7:00"
+  #     name: TODO
+  #     twitter: '@TODO'
+  #     title: TODO
+  #     description: |
+  #       TODO
 
 footer:
   - /_shared/footer.md

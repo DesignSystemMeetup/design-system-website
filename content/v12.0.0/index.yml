@@ -1,0 +1,43 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v12.0.0
+version: v12.0.0
+city: Sydney
+date: 2020-02-10 # v12
+location: /_locations/atlassian-new.md
+sponsors:
+  - /_sponsors/atlassian.md
+  - /_sponsors/thinkmill.md
+  - /_sponsors/tomwalker.md
+link: https://www.meetup.com/Design-System/events/266748783/ # v12
+image: v12.jpg
+eventdescription: |
+  Design System meetup Sydney v12.0.0 was a collaboration with the [Sydney Content Strategy](https://www.sydneycontentstrategy.com/) meetup.
+  We talked about content in design systems and how all that fits together. We heard from Anthony Starr and Steven Berends.
+
+speakers:
+  - time: "6:00"
+    title: Open doors
+  - time: "6:15"
+    title: Elle and Dom intro
+  - time: "6:30"
+    name: Anthony Starr
+    twitter: '@Tony_Starr'
+    title: "Strive for 73% content in your design system"
+    description: |
+      Learn how we built the Atlassian Design System on sheer grit, sweat, and determination. Thrill at how we glued it all together with a lot of
+      user-centered content. Marvel when you see where we are, how we got there, where we are going - and how content is and was, leading this initiative.
+  - time: "7:00"
+    title: Food break
+  - time: "7:20"
+    name: Steven Berends
+    twitter: '@fearlessssteven'
+    title: "Spooning: agile content and design systems"
+    description: |
+      My talk is about evolving content alongside government design systems.
+      I’m the boss of my own company BEAR LION BIRD, currently on assignment at the Australian Trade and Investment Commission.
+
+footer: /_shared/footer.md
