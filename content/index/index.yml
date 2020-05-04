@@ -8,8 +8,7 @@ next:
   pagetitle: Design System meetup Sydney v13.0.0
   version: v13.0.0
   city: Sydney
-  date: 2020-04-13 # v13
-  # date: 2020-06-8 # v14
+  date: 2020-06-8 # v14
   # date: 2020-08-7 # v15
   # date: 2020-10-12 # v16
   # date: 2020-12-14 # v17
@@ -18,8 +17,7 @@ next:
     # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/266748797/ # v13
-  # link: https://www.meetup.com/Design-System/events/266748816/ # v14
+  link: https://www.meetup.com/Design-System/events/266748816/ # v14
   # link: https://www.meetup.com/Design-System/events/266748845/ # v15
   # link: https://www.meetup.com/Design-System/events/266748872/ # v16
   # link: https://www.meetup.com/Design-System/events/266748883/ # v17
