@@ -12,7 +12,7 @@ next:
   # date: 2020-08-7 # v14
   # date: 2020-10-12 # v15
   # date: 2020-12-14 # v16
-  # location: /_locations/atlassian-new.md
+  location: /_locations/online.md
   sponsors:
     # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
@@ -41,7 +41,7 @@ next:
     - time: "6:30"
       name: Mike Riethmuller
       twitter: '@MikeRiethmuller'
-      title: Different types of UI state
+      title: The "state" of UI
       description: |
         This will come as a surprise to many of you, but user interfaces on the web, have different types of state. It might be that "State", much like "Design
         Systems", is a word that has lost all meaning for you, but regardless, I think you will agree the UI state designers talk about is different
