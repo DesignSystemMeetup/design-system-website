@@ -14,6 +14,7 @@ const Homepage = ({
 	footer,
 	youtubeChannel,
 	youtubeID,
+	description,
 	script,
 	_ID,
 	_nav,
@@ -23,7 +24,7 @@ const Homepage = ({
 }) => {
 	return (
 		<html>
-			<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={`Livestream. Join us for all things Design System. From solving issues in multi platform environments to how we name things this is where we share what we've learned building large and small scale design systems. We meet every second Monday of every second month.`}/>
+			<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={description} image='livestream.png'/>
 
 			<body className="homepage">
 				<div className="wrapper">
