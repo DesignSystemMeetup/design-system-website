@@ -1,0 +1,11 @@
+layout: live
+pagetitle: Design system meetup - Livestream
+
+header:
+  - /_shared/header.md
+
+youtubeChannel: UCMKyxLvZ1ZvtDZJUg2cWPXg
+youtubeID: kKAVMojibWU
+
+footer:
+  - /_shared/footer.md

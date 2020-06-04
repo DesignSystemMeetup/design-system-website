@@ -509,3 +509,16 @@ footer svg {
 		padding-top: 2rem;
 	}
 }
+
+.live {
+	display: flex;
+	margin: 0 auto;
+	margin-top: 2rem;
+	justify-content: center;
+}
+
+.live-video,
+.live-chat {
+	align-self: center;
+}
+
