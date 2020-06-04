@@ -27,14 +27,18 @@ const Homepage = ({
 			<Head _ID={ _ID } pagetitle={ pagetitle } eventdescription={description} image='livestream.png'/>
 
 			<body className="homepage">
-				<div className="wrapper">
+				<div className="wrapper wrapper-full">
 					{ header }
 
 					<main itemScope itemType="http://schema.org/Event">
 						<div className="live">
 							<iframe className="live-video" width="560" height="315" src={`https://www.youtube.com/embed/live_stream?channel=${youtubeChannel}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 							<iframe className="live-chat" width="420" height="630" src={`https://www.youtube.com/live_chat?v=${youtubeID}&embed_domain=designsystemmeetup.com`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
 						</div>
+						<p className="live-fallback">
+							If you have trouble with the embedded option, use this link: <a href={`https://www.youtube.com/watch?v=${youtubeID}`} rel="external" target="_blank">https://www.youtube.com/watch?v={youtubeID}</a>
+						</p>
 					</main>
 				</div>
 
@@ -61,6 +65,21 @@ Homepage.propTypes = {
 	 * footer: (partials)(2)
 	 */
 	footer: PropTypes.node.isRequired,
+
+	/**
+	 * youtubeChannel: UCMKyxLvZ1ZvtDZJUg2cWPXg
+	 */
+	youtubeChannel: PropTypes.string.isRequired,
+
+	/**
+	 * youtubeID: kKAVMojibWU
+	 */
+	youtubeID: PropTypes.string.isRequired,
+
+	/**
+	 * description: (text)(2)
+	 */
+	description: PropTypes.string.isRequired,
 };
 
 export default Homepage;

@@ -72,10 +72,16 @@ a:hover {
 	max-width: 80rem;
 	margin: 0 auto;
 }
+.wrapper-full {
+	max-width: none;
+}
 
 @media (min-width: 450px) {
 	.wrapper {
 		padding: 0 10%;
+	}
+	.wrapper-full {
+		padding: 0 1rem;
 	}
 }
 
@@ -522,3 +528,17 @@ footer svg {
 	align-self: center;
 }
 
+.live-video {
+	width: 65%;
+	height: 35.7vw;
+}
+.live-chat {
+	width: 35%;
+	height: 40rem;
+}
+
+.live-fallback {
+	margin-top: 5rem;
+	text-align: center;
+	opacity: 0.6;
+}
