@@ -4,11 +4,11 @@ pagetitle: Design system meetup - Livestream
 header:
   - /_shared/header.md
 
-description: |
-  In this very first Design System Meetup livestream we will hear from Mehran Granfar and Mike Riethmuller.
-  Tune in on the 9th June 6pm Sydney time.
-youtubeChannel: UCMKyxLvZ1ZvtDZJUg2cWPXg
-youtubeID: kKAVMojibWU
+# description: |
+#   In this very first Design System Meetup livestream we will hear from Mehran Granfar and Mike Riethmuller.
+#   Tune in on the 9th June 6pm Sydney time.
+# youtubeChannel: UCMKyxLvZ1ZvtDZJUg2cWPXg
+# youtubeID: kKAVMojibWU
 
 footer:
   - /_shared/footer.md

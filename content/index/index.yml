@@ -5,48 +5,45 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v13.0.0
-  version: v13.0.0
+  pagetitle: Design System meetup Sydney v14.0.0
+  version: v14.0.0
   city: Sydney
-  date: 2020-06-09 # v13
-  # date: 2020-08-7 # v14
+  date: 2020-08-7 # v14
   # date: 2020-10-12 # v15
   # date: 2020-12-14 # v16
-  location: /_locations/online.md
+  # location: /_locations/online.md
   sponsors:
     # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
     # - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/266748816/ # v13
-  # link: https://www.meetup.com/Design-System/events/266748845/ # v14
+  link: https://www.meetup.com/Design-System/events/266748845/ # v14
   # link: https://www.meetup.com/Design-System/events/266748872/ # v15
   # link: https://www.meetup.com/Design-System/events/266748883/ # v16
-  # image: v13.jpg
   # image: v14.jpg
   # image: v15.jpg
   # image: v16.jpg
   eventdescription: |
-    Design System meetup Sydney v13.0.0 now fully online.
+    Design System meetup Sydney v14.0.0 now fully online.
 
   speakers:
     # - time: "5:30"
     #   title: Open doors
-    - time: "6:00"
-      name: Mehran Granfar
-      twitter: '@granfar'
-      title: Building scalable framework-agnostic design systems using custom web components (stencil.js).
-      description: |
-        We’ll look at some of the nitty gritty, understand the benefits of this approach, explore common pitfalls, viable governance models, and architectural
-        setups to ensure adoption and scale.
-    - time: "6:30"
-      name: Mike Riethmuller
-      twitter: '@MikeRiethmuller'
-      title: The "state" of UI
-      description: |
-        This will come as a surprise to many of you, but user interfaces on the web, have different types of state. It might be that "State", much like "Design
-        Systems", is a word that has lost all meaning for you, but regardless, I think you will agree the UI state designers talk about is different
-        from the application state developers refer to. Let's figure out how to have a discussion about these similar sounding but very different
-        concepts for the sake of our sanity and better design system components.
+    # - time: "6:00"
+    #   name: Mehran Granfar
+    #   twitter: '@granfar'
+    #   title: Building scalable framework-agnostic design systems using custom web components (stencil.js).
+    #   description: |
+    #     We’ll look at some of the nitty gritty, understand the benefits of this approach, explore common pitfalls, viable governance models, and architectural
+    #     setups to ensure adoption and scale.
+    # - time: "6:30"
+    #   name: Mike Riethmuller
+    #   twitter: '@MikeRiethmuller'
+    #   title: The "state" of UI
+    #   description: |
+    #     This will come as a surprise to many of you, but user interfaces on the web, have different types of state. It might be that "State", much like "Design
+    #     Systems", is a word that has lost all meaning for you, but regardless, I think you will agree the UI state designers talk about is different
+    #     from the application state developers refer to. Let's figure out how to have a discussion about these similar sounding but very different
+    #     concepts for the sake of our sanity and better design system components.
 
 footer:
   - /_shared/footer.md
