@@ -18,7 +18,7 @@ eventdescription: |
 speakers:
   - time: "6:00"
     description: Intro to the first ever livestream
-    youtube: 9rMZyCWPf7k
+    youtube: Tepv6frlViA
   - time: "6:10"
     name: Mehran Granfar
     twitter: '@granfar'
@@ -26,7 +26,7 @@ speakers:
     description: |
       We’ll look at some of the nitty gritty, understand the benefits of this approach, explore common pitfalls, viable governance models, and architectural
       setups to ensure adoption and scale.
-    youtube: gCzvZQ2mzTc
+    youtube: VJSWL8WqMwo
   - time: "6:30"
     name: Mike Riethmuller
     twitter: '@MikeRiethmuller'
@@ -36,9 +36,9 @@ speakers:
       Systems", is a word that has lost all meaning for you, but regardless, I think you will agree the UI state designers talk about is different
       from the application state developers refer to. Let's figure out how to have a discussion about these similar sounding but very different
       concepts for the sake of our sanity and better design system components.
-    youtube: wJKGQC4y5gI
+    youtube: W4FKiJIVfhc
   - time: "7:00"
     description: End credits
-    youtube: N5eS4xZimCk
+    youtube: Cp4LizOkXDg
 
 footer: /_shared/footer.md
