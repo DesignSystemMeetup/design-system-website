@@ -13,7 +13,9 @@ sponsors:
 link: https://www.meetup.com/Design-System/events/266748816/ # v13
 image: v13.jpg
 eventdescription: |
-  Design System meetup Sydney v13.0.0 now fully online.
+  Design System meetup Sydney v13.0.0 streamed for the very first time online.
+  Mehran Granfar spoke about building scalable framework-agnostic design systems with web components
+  and Mike Riethmuller took us through the different states a component may have and what that means for design.
 
 speakers:
   - time: "6:00"
