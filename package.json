@@ -25,10 +25,10 @@
 		}
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.8.0",
-		"browser-sync": "^2.26.7",
+		"autoprefixer": "^9.8.5",
+		"browser-sync": "^2.26.9",
 		"cssnano": "^4.1.10",
-		"moment": "^2.26.0",
+		"moment": "^2.27.0",
 		"onchange": "^7.0.2",
 		"postcss-cli": "^7.1.1"
 	}
