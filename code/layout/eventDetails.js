@@ -46,7 +46,7 @@ const EventDetails = ({
 											}
 										</p>
 
-										{ speaker.title && <h2 className="heading-small heading--shade" itemProp="name">{ speaker.title }</h2> }
+										{ speaker.title && <h2 className="heading-small heading--shade" itemProp="name">{ _parseMD( speaker.title ) }</h2> }
 										{ speaker.description && <div className="schedule-desc">{ _parseMD( speaker.description ) }</div> }
 										{
 											speaker.youtube &&
