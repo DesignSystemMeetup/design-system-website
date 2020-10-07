@@ -10,7 +10,7 @@ next:
   city: Sydney
   date: 2020-10-12 # v14
   # date: 2020-12-14 # v15
-  # location: /_locations/online.md
+  location: /_locations/online.md
   sponsors:
     # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
