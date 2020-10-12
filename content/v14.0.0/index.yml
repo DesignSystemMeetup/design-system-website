@@ -1,0 +1,51 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v14.0.0
+version: v14.0.0
+city: Sydney
+date: 2020-10-12 # v14
+location: /_locations/online-past.md
+sponsors:
+  - /_sponsors/thinkmill.md
+link: https://www.meetup.com/Design-System/events/266748872/ # v14
+image: v14.jpg
+eventdescription: |
+  Design System meetup Sydney v14.0.0 streamed online again.
+  We heard from InfoTrack and their journey of change and from Premika PoSaw from GovTech and how she manages to introduce a design system to a government body.
+
+speakers:
+  - time: "5:30"
+    title: Start streaming
+  - time: "6:00"
+    name: Kurt Walsh, Sam Nivison-Smith, Andre Callus
+    title: What we learned about change
+    description: |
+      How we're managing change as we grow our design system
+  - time: "6:30"
+    name: Premika PoSaw
+    title: |
+      The Design Alliance
+
+      Clone Wars: Stories of light and dark revealed
+    description: |
+      In a galaxy far, far away it is a period of great fragmentation. The Design Alliance lies in disarray - turf wars are the enemy. A series of battles
+      between departments, vendors, systems and the IT departments leave many stars with multiple systems. Many of these systems don’t talk to each
+      other and are not made to improve usability or achieve better outcomes.
+
+      Join the resistance, see the first spark of hope that will become ....The Digital Experience+.
+      Come follow the adventures of rolling out a design system that spans 3 galaxies and 15 star systems.
+
+      ---
+
+      Having spent a large part of her 23 year career in advertising and design, approximately 9 years ago Premika found herself
+      naturally drawn to Human Centred Design, neuroscience and at that time the relatively new field of UX. Initially self taught, she
+      went on to complete a Master’s in Digital Media/UX and pivoted into the world of redesigning enterprise software in aviation
+      infotech, retail and e-commerce.
+
+      Today she’s UX Lead at GovTech and works with the Ministry of Manpower in Singapore, tackling real world problems and building government e-services
+      that uses technology to better serve and anticipate citizens’ needs.
+
+footer: /_shared/footer.md
