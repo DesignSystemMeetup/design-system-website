@@ -17,13 +17,15 @@ eventdescription: |
   We heard from InfoTrack and their journey of change and from Premika PoSaw from GovTech and how she manages to introduce a design system to a government body.
 
 speakers:
-  - time: "5:30"
-    title: Start streaming
   - time: "6:00"
+    description: Intro to the livestream
+    youtube: gD_K7dKKFhk
+  - time: "6:10"
     name: Kurt Walsh, Sam Nivison-Smith, Andre Callus
     title: What we learned about change
     description: |
       How we're managing change as we grow our design system
+    youtube: F5ppq0_SKi0
   - time: "6:30"
     name: Premika PoSaw
     title: |
@@ -47,5 +49,9 @@ speakers:
 
       Today she’s UX Lead at GovTech and works with the Ministry of Manpower in Singapore, tackling real world problems and building government e-services
       that uses technology to better serve and anticipate citizens’ needs.
+    youtube: CLKSwwlma5g
+  - time: "7:00"
+    description: End
+    youtube: jVlW-jK-Zq8
 
 footer: /_shared/footer.md
