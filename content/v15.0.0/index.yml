@@ -1,0 +1,45 @@
+layout: event
+
+header: /_shared/header.md
+
+type: event
+pagetitle: Design System meetup Sydney v15.0.0
+version: v15.0.0
+city: Sydney
+date: 2020-12-14
+location: /_locations/online.md
+sponsors:
+  - /_sponsors/thinkmill.md
+link: https://www.meetup.com/Design-System/events/266748883/
+image: v15.jpg
+eventdescription: |
+  At Design System meetup Sydney v15.0.0 we heard from Michael Dougall about the delivery of CSS inside Atlassian and Jess Telford gave us an intro to GraphQL
+  for designers.
+
+speakers:
+  - time: "5:30"
+    title: Start streaming
+  - time: "6:00"
+    name: Michael Dougall
+    twitter: '@itsmadou'
+    title: Unwinding style delivery
+    description: |
+      This talk goes in depth into the history of why & how we deliver our styles in the Atlassian Design System,
+      and thoughts of how we might do it in the future.
+  - time: "6:30"
+    name: Jess Telford
+    twitter: '@JessTelford'
+    title: |
+      GraphQL for designers
+    description: |
+      Why do developers love GraphQL and how can designers best work with them?
+
+      GraphQL is still the new kid on the block, but every day a new project is using it as "The API".
+      In a world with increasingly complex requirements and engineering effort, finding the best way to understand and work with GraphQL can be beneficial
+      for both designers and engineers.
+      In this talk we'll cover:
+      - What is GraphQL exactly
+      - The benefits of GraphQL in a world of complex related data
+      - Introducing the Gap Analysis System to level up the design <-> engineering collaboration
+
+footer: /_shared/footer.md
