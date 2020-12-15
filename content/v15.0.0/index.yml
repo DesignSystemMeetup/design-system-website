@@ -17,8 +17,6 @@ eventdescription: |
   for designers.
 
 speakers:
-  - time: "5:30"
-    title: Start streaming
   - time: "6:00"
     name: Michael Dougall
     twitter: '@itsmadou'
@@ -26,6 +24,7 @@ speakers:
     description: |
       This talk goes in depth into the history of why & how we deliver our styles in the Atlassian Design System,
       and thoughts of how we might do it in the future.
+    youtube: 3rZ3SL9SKK8
   - time: "6:30"
     name: Jess Telford
     twitter: '@JessTelford'
@@ -41,5 +40,6 @@ speakers:
       - What is GraphQL exactly
       - The benefits of GraphQL in a world of complex related data
       - Introducing the Gap Analysis System to level up the design <-> engineering collaboration
+    youtube: Ikz0StFYaig
 
 footer: /_shared/footer.md
