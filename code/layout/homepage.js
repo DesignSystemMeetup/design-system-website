@@ -46,7 +46,7 @@ const Homepage = ({
 										</span>
 									</span>
 									<span className="eventsHeadline-title" itemProp="startDate" content={ MakeDateTime( next.date, time ).format() }>
-										{ MakeDateTime( next.date, time ).format('Do MMM') }
+										{ next.date ? MakeDateTime( next.date, time ).format('Do MMM') : "We're looking for you" }
 									</span>
 								</h1>
 							</div>

@@ -105,9 +105,6 @@ const EventDetails = ({
 								<svg className="schedule-shape">
 									<use xlinkHref={ RelativeURL( `assets/svg/sprite.svg#shape4`, _ID ) }/>
 								</svg>
-
-								<h2 className="heading-small heading--shade-side">We are looking for you</h2>
-
 								<p>
 									Get in contact with us if you'd like to talk at our next meetup.<br/>
 									Send us a message at <a href="mailto:talks@designsystemmeetup.com">talks@designsystemmeetup.com</a> or
