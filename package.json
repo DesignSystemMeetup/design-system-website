@@ -14,7 +14,8 @@
 	},
 	"dependencies": {
 		"babel-minify": "^0.5.1",
-		"cuttlebelle": "latest"
+		"cuttlebelle": "latest",
+		"postcss": "^8.4.6"
 	},
 	"cuttlebelle": {
 		"folder": {
@@ -25,11 +26,11 @@
 		}
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.8.5",
-		"browser-sync": "^2.26.9",
-		"cssnano": "^4.1.10",
-		"moment": "^2.27.0",
-		"onchange": "^7.0.2",
-		"postcss-cli": "^7.1.1"
+		"autoprefixer": "^10.4.2",
+		"browser-sync": "^2.27.7",
+		"cssnano": "^5.0.17",
+		"moment": "^2.29.1",
+		"onchange": "^7.1.0",
+		"postcss-cli": "^9.1.0"
 	}
 }
