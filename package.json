@@ -29,7 +29,7 @@
 		"autoprefixer": "^10.4.2",
 		"browser-sync": "^2.27.7",
 		"cssnano": "^5.0.17",
-		"moment": "^2.29.1",
+		"moment": "^2.29.4",
 		"onchange": "^7.1.0",
 		"postcss-cli": "^9.1.0"
 	}
