@@ -58,7 +58,7 @@ const Homepage = ({
 									(next.link && next.link == 'internal') ? (
 										<>
 											<label htmlFor="join-form-email"><h2>Add yourself to the list</h2></label>
-											<form action="http://localhost:8877/join/" method="POST" id="join-form">
+											<form action="https://dominik-wilkowski.com/dsm/join/" method="POST" id="join-form">
 												<input type="hidden" name="id" value={next.id} id="join-form-id" />
 												<input type="email" name="email" placeholder="Enter your email to join" required className="join-input" id="join-form-email" />
 												<input type="submit" value="Join" className="btn join-submit" id="join-form-submit" />
@@ -71,7 +71,7 @@ const Homepage = ({
 
 						<div id="join-attendees-wrapper" data-hidden>
 							<h2 className="join-attendees-heading">People who are coming</h2>
-							<div id="join-attendees" data-get-data-from={`http://localhost:8877/event/${next.id}`} />
+							<div id="join-attendees" data-get-data-from={`https://dominik-wilkowski.com/dsm/event/${next.id}`} />
 						</div>
 
 						<EventDetails

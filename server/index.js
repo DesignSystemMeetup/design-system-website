@@ -3,8 +3,9 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const cfonts = require('cfonts');
 const crypto = require('crypto');
+const path = require('path');
 
-const DB_FILE = 'db.json';
+const DB_FILE = path.normalize(`${__dirname}/db.json`);
 const PORT = 8877;
 
 const server = express();
@@ -44,15 +45,16 @@ function read_from_db(id) {
 		readFile(DB_FILE, (error, db) => {
 			if (error) {
 				reject(error);
-			}
-			db = JSON.parse(db);
+			} else {
+				db = JSON.parse(db);
 
-			resolve(db[id] || []);
+				resolve(db[id] || []);
+			}
 		});
 	});
 }
 
-server.post(`/join`, async (req, res) => {
+server.post(`/dsm/join`, async (req, res) => {
 	let { id, email } = req.body;
 
 	if (!id || id.length === 0) {
@@ -68,7 +70,7 @@ server.post(`/join`, async (req, res) => {
 	}
 });
 
-server.get('/event/:id', async (req, res) => {
+server.get('/dsm/event/:id', async (req, res) => {
 	const { id } = req.params;
 	console.log(`↠  Get data from "${id}"`);
 
