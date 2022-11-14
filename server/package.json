@@ -1,0 +1,13 @@
+{
+	"name": "dsm-server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.1",
+		"cfonts": "^3.1.1",
+		"express": "^4.18.2"
+	}
+}

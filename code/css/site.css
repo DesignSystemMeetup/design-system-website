@@ -317,7 +317,9 @@ a:hover {
 	margin: 0.5rem 0;
 }
 
-a.btn {
+.btn {
+	position: relative;
+	top: 0;
 	font-family: 'Maven Pro', sans-serif;
 	font-weight: 700;
 	appearance: none;
@@ -328,19 +330,14 @@ a.btn {
 	display: block;
 	text-align: center;
 	box-shadow: 5px 5px 0px 0px #8F6259;
-	margin-bottom: 3px;
-	margin-top: 0;
+	margin: 0 0 3px 0;
+	cursor: pointer;
 }
 
-a:focus.btn {
-	outline: none;
-}
-
-a:active.btn,
-a:focus.btn {
-	margin-top: 3px;
+:active.btn:not(:disabled),
+:focus.btn:not(:disabled) {
+	top: 3px;
 	box-shadow: 2px 2px 0px 0px #8F6259;
-	margin-bottom: -3px;
 }
 
 @media (min-width: 1000px) {
@@ -550,4 +547,47 @@ footer svg {
 	margin-top: 5rem;
 	text-align: center;
 	opacity: 0.6;
+}
+
+.join-input {
+	padding: 3px 1rem;
+	margin-bottom: 6px;
+	display: block;
+	width: 100%;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	border: 3px solid #FFC000;
+	box-sizing: border-box;
+}
+.join-submit:disabled {
+	opacity: 0.3;
+	cursor: wait;
+}
+.join-attendees-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.join-attendees-list img {
+	max-width: 80%;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	border-radius: 100%;
+}
+#join-attendees-wrapper[data-hidden] {
+	display: none;
+}
+.join-attendees-heading {
+	margin-left: 4.8rem;
+}
+@media (min-width: 1000px) {
+	.join-attendees-heading {
+		margin-left: 0;
+	}
 }

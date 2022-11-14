@@ -8,20 +8,19 @@ next:
   pagetitle: Design System meetup Sydney v16.0.0
   version: v16.0.0
   city: Sydney
-  # date: 2021-02-08 # v16
-  location: /_locations/online.md
+  date: 2022-11-22 # v16
+  location: /_locations/canva.md
   sponsors:
-    # - /_sponsors/atlassian.md
     - /_sponsors/thinkmill.md
-    # - /_sponsors/tomwalker.md
-  link: https://www.meetup.com/Design-System/events/266748883/ # v16
+  # link: internal
+  id: 16
   # image: v16.jpg
   eventdescription: |
-    Design System meetup Sydney v16.0.0; now fully online.
+    Design System meetup Sydney v16.0.0.
 
   speakers:
     # - time: "5:30"
-    #   title: Start streaming
+    #   title: Doors open
     # - time: "6:00"
     #   name: Michael Dougall
     #   twitter: '@itsmadou'

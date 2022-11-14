@@ -53,8 +53,25 @@ const Homepage = ({
 							<div className="innerWrapper-right" itemProp="offers" itemScope itemType="http://schema.org/Offer">
 								<span itemProp="price" content="Free" />
 								<span itemProp="priceCurrency" content="AUD" />
-								{ next.link && <a className="btn" itemProp="url" href={ next.link } target="_blank" rel="noopener noreferrer">Register</a> }
+								{ (next.link && next.link !== 'internal') && <a className="btn" itemProp="url" href={ next.link } target={ next.link.startsWith('http') ? '_blank' : undefined } rel={ next.link.startsWith('http') ? 'noopener noreferrer' : undefined }>Register</a> }
+								{
+									(next.link && next.link == 'internal') ? (
+										<>
+											<label htmlFor="join-form-email"><h2>Add yourself to the list</h2></label>
+											<form action="http://localhost:8877/join/" method="POST" id="join-form">
+												<input type="hidden" name="id" value={next.id} id="join-form-id" />
+												<input type="email" name="email" placeholder="Enter your email to join" required className="join-input" id="join-form-email" />
+												<input type="submit" value="Join" className="btn join-submit" id="join-form-submit" />
+											</form>
+										</>
+									) : undefined
+								}
 							</div>
+						</div>
+
+						<div id="join-attendees-wrapper" data-hidden>
+							<h2 className="join-attendees-heading">People who are coming</h2>
+							<div id="join-attendees" data-get-data-from={`http://localhost:8877/event/${next.id}`} />
 						</div>
 
 						<EventDetails
