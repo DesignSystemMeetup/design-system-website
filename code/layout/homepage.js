@@ -57,7 +57,7 @@ const Homepage = ({
 								{
 									(next.link && next.link == 'internal') ? (
 										<>
-											<label htmlFor="join-form-email"><h2>Add yourself to the list</h2></label>
+											<label htmlFor="join-form-email"><h2>RSVP to this event</h2></label>
 											<form action="https://dominik-wilkowski.com/dsm/join/" method="POST" id="join-form">
 												<input type="hidden" name="id" value={next.id} id="join-form-id" />
 												<input type="email" name="email" placeholder="Enter your email to join" required className="join-input" id="join-form-email" />
@@ -70,7 +70,7 @@ const Homepage = ({
 						</div>
 
 						<div id="join-attendees-wrapper" data-hidden>
-							<h2 className="join-attendees-heading">People who are coming</h2>
+							<h2 className="join-attendees-heading">People who have RSVPed</h2>
 							<div id="join-attendees" data-get-data-from={`https://dominik-wilkowski.com/dsm/event/${next.id}`} />
 						</div>
 

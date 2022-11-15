@@ -19,30 +19,53 @@ next:
     Design System meetup Sydney v16.0.0.
 
   speakers:
-    # - time: "5:30"
-    #   title: Doors open
-    # - time: "6:00"
-    #   name: Michael Dougall
-    #   twitter: '@itsmadou'
-    #   title: Unwinding style delivery
-    #   description: |
-    #     This talk goes in depth into the history of why & how we deliver our styles in the Atlassian Design System,
-    #     and thoughts of how we might do it in the future.
-    # - time: "6:30"
-    #   name: Jess Telford
-    #   twitter: '@JessTelford'
-    #   title: |
-    #     GraphQL for designers
-    #   description: |
-    #     Why do developers love GraphQL and how can designers best work with them?
+    - time: "5:00"
+      title: Doors open
+    - time: "5:30"
+      name: Boris Bozic
+      title: Building Good and Compelling Products
+      description: |
+        Despite smart people, good tools, and modern tech, why is it still hard
+        to make Good and Compelling products? Boris has some thoughts,
+        and some very practical suggestions for how teams of humans can
+        do great work without hand-offs and siloes.
 
-    #     GraphQL is still the new kid on the block, but every day a new project is using it as "The API".
-    #     In a world with increasingly complex requirements and engineering effort, finding the best way to understand and work with GraphQL can be beneficial
-    #     for both designers and engineers.
-    #     In this talk we'll cover:
-    #     - What is GraphQL exactly
-    #     - The benefits of GraphQL in a world of complex related data
-    #     - Introducing the Gap Analysis System to level up the design <-> engineering collaboration
+        Boris Bozic is the co-founder and Head of Design at Thinkmill – a design
+        and engineering consultancy that specialises in the broad definition of
+        Design Systems. Boris leads cross functional teams that aim to produce
+        Good and Compelling Products, usually with a Design System at the
+        centre.
+
+    - time: "6:00"
+      name: Davyd Geyl
+      title: Practical aspects of designing a Color system and automating the workflow.
+      description: |
+        Currently working as a Principal iOS Engineer at Invoice2go (a Bill.com
+        company) leading a mobile design system. Davyd led the Design
+        System team in Telstra, which won the Telstra Design award in
+        the Design Methodology category in 2021. Before Telstra his team
+        created a design system in Commonwealth Bank of Australia.
+
+        Davyd is passionate about great UX, elegant design and precise engineering.
+
+    - time: "6:30"
+      title: Break
+
+    - time: "6:45"
+      name: Josh Crowley
+      title: What makes a design system play well?
+      description: |
+        Having the right mix of tooling and culture is key to making a design
+        system a playful collaborative experience for all stakeholders.
+        In this talk we review how tools like Storybook and Playroom
+        uplift design systems and make them accessible to developers and
+        designers alike. We’ll review tips and ideas for encouraging the
+        right culture for engaging with design systems and their
+        maintainers.
+
+        Joshua Crowley is an interactive designer and web developer working at
+        the Department of Agriculture. He’s a happy and enthusiastic user of the
+        Agriculture Design System (AgDS).
 
 footer:
   - /_shared/footer.md
