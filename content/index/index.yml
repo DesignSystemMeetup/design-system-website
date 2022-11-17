@@ -21,7 +21,9 @@ next:
   speakers:
     - time: "5:00"
       title: Doors open
-    - time: "5:30"
+    - time: "5:00"
+      title: Intro and welcome to Canva
+    - time: "5:40"
       name: Boris Bozic
       title: Building Good and Compelling Products
       description: |
@@ -36,7 +38,7 @@ next:
         Good and Compelling Products, usually with a Design System at the
         centre.
 
-    - time: "6:00"
+    - time: "6:10"
       name: Davyd Geyl
       title: Practical aspects of designing a Color system and automating the workflow.
       description: |
@@ -48,10 +50,10 @@ next:
 
         Davyd is passionate about great UX, elegant design and precise engineering.
 
-    - time: "6:30"
+    - time: "6:40"
       title: Break
 
-    - time: "6:45"
+    - time: "7:10"
       name: Josh Crowley
       title: What makes a design system play well?
       description: |
@@ -66,6 +68,12 @@ next:
         Joshua Crowley is an interactive designer and web developer working at
         the Department of Agriculture. He’s a happy and enthusiastic user of the
         Agriculture Design System (AgDS).
+
+    - time: "7:30"
+      title: Callouts and open jobs
+
+    - time: "7:40"
+      title: Open floor
 
 footer:
   - /_shared/footer.md
