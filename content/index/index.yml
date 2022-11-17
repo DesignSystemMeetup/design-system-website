@@ -12,7 +12,7 @@ next:
   location: /_locations/canva.md
   sponsors:
     - /_sponsors/thinkmill.md
-  # link: internal
+  link: internal
   id: 16
   # image: v16.jpg
   eventdescription: |
