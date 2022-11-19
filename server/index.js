@@ -48,7 +48,15 @@ function read_from_db(id) {
 			} else {
 				db = JSON.parse(db);
 
-				resolve(db[id] || []);
+				const result = db[id].map(({email,hash}) => {
+					const bits = email.split("@");
+					return {
+						email: `${bits[0].substr(0,2)}***@***${bits[1].substr(-5)}`,
+						hash,
+					};
+				});
+
+				resolve(result || []);
 			}
 		});
 	});
