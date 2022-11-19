@@ -73,8 +73,8 @@ server.post(`/dsm/join`, async (req, res) => {
 
 		console.log(`↞  Write "${email}" to "${id}"`);
 
-		const data = await write_to_db(id, email);
-		res.json(data);
+		await write_to_db(id, email);
+		res.redirect(302, 'https://designsystemmeetup.com/');
 	}
 });
 
