@@ -70,7 +70,7 @@ const Homepage = ({
 						</div>
 
 						<div id="join-attendees-wrapper" data-hidden>
-							<h2 className="join-attendees-heading">People who have RSVPed</h2>
+							<h2 className="join-attendees-heading" id="join-attendees-heading">People who have RSVPed</h2>
 							<div id="join-attendees" data-get-data-from={`https://dominik-wilkowski.com/dsm/event/${next.id}`} />
 						</div>
 
