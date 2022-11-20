@@ -23,22 +23,22 @@ next:
       title: Doors open
     - time: "5:00"
       title: Intro and welcome to Canva
+    # - time: "5:40"
+    #   name: Boris Bozic
+    #   title: Building Good and Compelling Products
+    #   description: |
+    #     Despite smart people, good tools, and modern tech, why is it still hard
+    #     to make Good and Compelling products? Boris has some thoughts,
+    #     and some very practical suggestions for how teams of humans can
+    #     do great work without hand-offs and siloes.
+
+    #     Boris Bozic is the co-founder and Head of Design at Thinkmill – a design
+    #     and engineering consultancy that specialises in the broad definition of
+    #     Design Systems. Boris leads cross functional teams that aim to produce
+    #     Good and Compelling Products, usually with a Design System at the
+    #     centre.
+
     - time: "5:40"
-      name: Boris Bozic
-      title: Building Good and Compelling Products
-      description: |
-        Despite smart people, good tools, and modern tech, why is it still hard
-        to make Good and Compelling products? Boris has some thoughts,
-        and some very practical suggestions for how teams of humans can
-        do great work without hand-offs and siloes.
-
-        Boris Bozic is the co-founder and Head of Design at Thinkmill – a design
-        and engineering consultancy that specialises in the broad definition of
-        Design Systems. Boris leads cross functional teams that aim to produce
-        Good and Compelling Products, usually with a Design System at the
-        centre.
-
-    - time: "6:10"
       name: Davyd Geyl
       title: Practical aspects of designing a Color system and automating the workflow.
       description: |
@@ -50,10 +50,10 @@ next:
 
         Davyd is passionate about great UX, elegant design and precise engineering.
 
-    - time: "6:40"
+    - time: "6:10"
       title: Break
 
-    - time: "7:10"
+    - time: "6:40"
       name: Josh Crowley
       title: What makes a design system play well?
       description: |
@@ -69,10 +69,10 @@ next:
         the Department of Agriculture. He’s a happy and enthusiastic user of the
         Agriculture Design System (AgDS).
 
-    - time: "7:30"
+    - time: "7:10"
       title: Callouts and open jobs
 
-    - time: "7:40"
+    - time: "7:20"
       title: Open floor
 
 footer:
