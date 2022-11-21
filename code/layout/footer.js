@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const Footer = ({ _body, _ID }) => (
 	<footer className="wrapper">
 		{ _body }
-		<a class="sr-only" rel="me" href="https://mastodon.social/@wilkowskidom">Mastodon</a>
+		<a className="sr-only" rel="me" href="https://mastodon.social/@wilkowskidom">Mastodon</a>
 		<a className="iconText" href={`https://github.com/DesignSystemMeetup/design-system-website/blob/master/content/${ _ID }`}>
 			<span className="iconText-text">Edit this page</span>
 
