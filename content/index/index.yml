@@ -5,24 +5,24 @@ header:
   - /_shared/header.md
 
 next:
-  pagetitle: Design System meetup Sydney v16.0.0
-  version: v16.0.0
+  pagetitle: Design System meetup Sydney v17.0.0
+  version: v17.0.0
   city: Sydney
-  date: 2022-11-22 # v16
-  location: /_locations/canva.md
+  date: 2023-01-12 # v17
+  # location: /_locations/canva.md
   sponsors:
     - /_sponsors/thinkmill.md
-  link: internal
-  id: 16
+  # link: internal
+  id: 17
   # image: v16.jpg
   eventdescription: |
-    Design System meetup Sydney v16.0.0.
+    Design System meetup Sydney v17.0.0.
 
   speakers:
-    - time: "5:00"
-      title: Doors open
-    - time: "5:00"
-      title: Intro and welcome to Canva
+    # - time: "5:00"
+    #   title: Doors open
+    # - time: "5:00"
+    #   title: Intro and welcome to Canva
     # - time: "5:40"
     #   name: Boris Bozic
     #   title: Building Good and Compelling Products
@@ -38,42 +38,11 @@ next:
     #     Good and Compelling Products, usually with a Design System at the
     #     centre.
 
-    - time: "5:40"
-      name: Davyd Geyl
-      title: Practical aspects of designing a Color system and automating the workflow.
-      description: |
-        Currently working as a Principal iOS Engineer at Invoice2go (a Bill.com
-        company) leading a mobile design system. Davyd led the Design
-        System team in Telstra, which won the Telstra Design award in
-        the Design Methodology category in 2021. Before Telstra his team
-        created a design system in Commonwealth Bank of Australia.
+    # - time: "7:10"
+    #   title: Callouts and open jobs
 
-        Davyd is passionate about great UX, elegant design and precise engineering.
-
-    - time: "6:10"
-      title: Break
-
-    - time: "6:40"
-      name: Josh Crowley
-      title: What makes a design system play well?
-      description: |
-        Having the right mix of tooling and culture is key to making a design
-        system a playful collaborative experience for all stakeholders.
-        In this talk we review how tools like Storybook and Playroom
-        uplift design systems and make them accessible to developers and
-        designers alike. We’ll review tips and ideas for encouraging the
-        right culture for engaging with design systems and their
-        maintainers.
-
-        Joshua Crowley is an interactive designer and web developer working at
-        the Department of Agriculture. He’s a happy and enthusiastic user of the
-        Agriculture Design System (AgDS).
-
-    - time: "7:10"
-      title: Callouts and open jobs
-
-    - time: "7:20"
-      title: Open floor
+    # - time: "7:20"
+    #   title: Open floor
 
 footer:
   - /_shared/footer.md
